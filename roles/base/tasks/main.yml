@@ -1,9 +1,22 @@
 ---
 - include: apt-repos.yml
+  tags:
+    - apt
+    - repos
 #- include: apt-cacher-client.yml
 - include: filesystem.yml
+  tags:
+    - filesystem
 #- include: pam_namespace.yml
 - include: unattendedupdates.yml
+  tags:
+    - unattendedupdates
 - include: grub.yml
+  tags:
+    - grub
 - include: network.yml
+  tags:
+    - network
 - include: speedupboot.yml
+  tags:
+    - speedupboot

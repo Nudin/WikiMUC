@@ -53,6 +53,8 @@
   copy:
     src: etc/security/pam_mount.conf.xml
     dest: /etc/security/pam_mount.conf.xml
+  tags:
+    - filesystem
 
 - name: Configure NSS
   copy:
