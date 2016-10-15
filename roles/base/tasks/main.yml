@@ -1,0 +1,9 @@
+---
+- include: apt-repos.yml
+#- include: apt-cacher-client.yml
+- include: filesystem.yml
+#- include: pam_namespace.yml
+- include: unattendedupdates.yml
+- include: grub.yml
+- include: network.yml
+- include: speedupboot.yml

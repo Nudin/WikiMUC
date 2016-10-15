@@ -1,0 +1,27 @@
+[Default Applications]
+inode/directory=pcmanfm.desktop
+x-scheme-handler/http=userapp-Firefox-UFE0LY.desktop
+x-scheme-handler/https=userapp-Firefox-UFE0LY.desktop
+x-scheme-handler/ftp=userapp-Firefox-UFE0LY.desktop
+x-scheme-handler/chrome=userapp-Firefox-UFE0LY.desktop
+text/html=userapp-Firefox-UFE0LY.desktop
+application/x-extension-htm=userapp-Firefox-UFE0LY.desktop
+application/x-extension-html=userapp-Firefox-UFE0LY.desktop
+application/x-extension-shtml=userapp-Firefox-UFE0LY.desktop
+application/xhtml+xml=userapp-Firefox-UFE0LY.desktop
+application/x-extension-xhtml=userapp-Firefox-UFE0LY.desktop
+application/x-extension-xht=userapp-Firefox-UFE0LY.desktop
+
+[Added Associations]
+inode/directory=pcmanfm.desktop;
+x-scheme-handler/http=userapp-Firefox-UFE0LY.desktop;
+x-scheme-handler/https=userapp-Firefox-UFE0LY.desktop;
+x-scheme-handler/ftp=userapp-Firefox-UFE0LY.desktop;
+x-scheme-handler/chrome=userapp-Firefox-UFE0LY.desktop;
+text/html=userapp-Firefox-UFE0LY.desktop;
+application/x-extension-htm=userapp-Firefox-UFE0LY.desktop;
+application/x-extension-html=userapp-Firefox-UFE0LY.desktop;
+application/x-extension-shtml=userapp-Firefox-UFE0LY.desktop;
+application/xhtml+xml=userapp-Firefox-UFE0LY.desktop;
+application/x-extension-xhtml=userapp-Firefox-UFE0LY.desktop;
+application/x-extension-xht=userapp-Firefox-UFE0LY.desktop;

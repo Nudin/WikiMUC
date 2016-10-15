@@ -1,0 +1,6 @@
+Xsession: X session started for gast at Sa 13. Aug 18:37:26 CEST 2016
+localuser:gast being added to access control list
+** Message: main.vala:99: Session is LXDE
+** Message: main.vala:100: DE is LXDE
+** Message: main.vala:131: log directory: /home/gast/.cache/lxsession/LXDE
+** Message: main.vala:132: log path: /home/gast/.cache/lxsession/LXDE/run.log

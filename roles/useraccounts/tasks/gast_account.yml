@@ -1,0 +1,67 @@
+---
+
+- name: Create guest group
+  group:
+    name=guest
+    state=present
+
+- name: Create guest-account {{ guest_usr }}
+  user:
+    name={{ guest_usr }}
+    password={{ guest_pw }} uid={{ guest_uid }} groups="guest" shell="/bin/bash"
+
+- name: Add guest-account to groups
+  user: name={{ guest_usr }} groups=cdrom,floppy,audio,video,plugdev,users
+
+- name: Prevent guest-user from changing the password
+  command: passwd {{ guest_usr }} -n 10000
+
+- name: Install cleaner-script
+  copy:
+    src=usr/sbin/cleansession
+    dest=/usr/sbin/cleansession owner=root group=root mode=0744
+
+- name: Add cleaner-script to pam
+  lineinfile:
+    line="session required   pam_exec.so   type=close_session /usr/sbin/cleansession"
+    dest=/etc/pam.d/common-session
+
+- name: Install autologout-script
+  copy:
+    src=usr/sbin/autologout
+    dest=/usr/sbin/autologout owner=root group=root mode=0744
+
+- name: Add autologout-script to pam
+  lineinfile:
+    line="session required   pam_exec.so   type=open_session /usr/sbin/autologout"
+    dest=/etc/pam.d/common-session
+
+- name: Add pam_mkhomedir to pam
+  lineinfile:
+    regexp="session .* pam_mkhomedir"
+    line="session    required    pam_mkhomedir.so skel=/etc/skel/ umask=0022"
+    dest=/etc/pam.d/common-session
+
+- name: Install configuration of guest-user
+  synchronize:
+    src=etc/skel/ dest=/etc/skel/
+    recursive=yes
+    delete=yes
+
+- name: create directory on data-partition
+  file:
+    state=directory
+    dest="/data/gast"
+    owner="gast"
+
+- name: Add linkt to data-partition
+  file:
+    state=link
+    src="/data/gast"
+    dest="/etc/skel/Lokale_Daten"
+
+- name: Set default desktop to lxde
+  lineinfile:
+    regexp="^#*user-session=.*$"
+    line="user-session=LXDE"
+    dest=/etc/lightdm/lightdm.conf

@@ -1,0 +1,79 @@
+---
+
+- include_vars: passwords.yml
+
+- name: Install needed software
+  apt: 
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - smbclient
+    - cifs-utils
+    - heimdal-clients
+    - libpam-winbind
+    - libnss-winbind
+    - libpam-heimdal
+    - libpam-mount
+
+- name: Configure DHCP to use jimbo as dns and set Domain-name
+  copy: 
+    src: etc/dhcp/dhclient.conf
+    dest: /etc/dhcp/dhclient.conf
+  register: dhcpconf
+
+- name: Add FQDN to /etc/hosts
+  template:
+    src: etc/hosts.j2
+    dest: /etc/hosts
+  register: hosts
+
+- name: Restart Network
+  shell: ifdown eth0; ifup eth0 
+  when: dhcpconf.changed or hosts.changed
+
+- name: Configure Keberos
+  copy:
+    src: etc/krb5.conf
+    dest: /etc/krb5.conf
+
+- name: Kinit
+  shell: echo {{ domainpw }} | kinit --password-file=STDIN Administrator@{{ REALM }}
+
+- name: Configure smb.conf for winbind
+  copy:
+    src: etc/samba/smb.conf
+    dest: /etc/samba/smb.conf
+
+- name: Restart Winbind
+  service:
+    name: winbind
+    state: restarted
+
+- name: Configure PAM-Mount to mount home-share
+  copy:
+    src: etc/security/pam_mount.conf.xml
+    dest: /etc/security/pam_mount.conf.xml
+
+- name: Configure NSS
+  copy:
+    src: etc/nsswitch.conf
+    dest: /etc/nsswitch.conf
+
+- name: Configure PAM
+  copy:
+    src: etc/pam.d/{{ item }}
+    dest: /etc/pam.d/{{ item }}
+  with_items:
+    - common-auth
+    - common-session
+    - common-account
+    - common-password
+
+- name: Map samba-users to local groups for permissions
+  lineinfile:
+    dest: /etc/security/group.conf
+    line: "* ; * ; * ; Al0000-2400 ; floppy, audio, cdrom, video, plugdev, users"
+
+- name: Add computer to ads
+  shell: net ads join -U Administrator%{{ domainpw }}
+

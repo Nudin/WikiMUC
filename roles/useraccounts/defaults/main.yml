@@ -1,0 +1,16 @@
+---
+
+# Root-PW
+root_pw: "$6$rounds=65536$WikipediaSalt$25MGyGMMxG44v2xYAML991lEfAsySrvge6DFH6XwC9evUcYpHKga.8.ufu/71HVQsU8WjthN7Mwbcj1N.VMLY1"
+
+# Samba
+realm: "net.wikimuc.org"
+domain: net
+REALM: "{{ realm | upper }}"
+DOMAIN: "{{ domain | upper }}"
+
+# Gast-User
+guest_usr: "gast"
+guest_pw: "$5$84I.2twsARgnZ8$2SB9LT1ef5gi5P/cT7MGEk9QDVnC4VsYFTWmwHdsSo0"
+guest_uid: 2000
+

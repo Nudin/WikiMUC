@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if id -nG "${PAM_USER}" | grep -qw "guest"; then
+   if [ -e /home/${PAM_USER} ] ; then
+      rm -rf /home/${PAM_USER}
+   fi
+   cp -ra /etc/skel /home/${PAM_USER}
+   chown -R ${PAM_USER}:${PAM_USER} /home/${PAM_USER}
+
+   rm /var/lib/lightdm/.cache/lightdm-gtk-greeter/state
+   rm /var/cache/lightdm/dmrc/gast.dmrc
+fi

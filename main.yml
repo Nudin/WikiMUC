@@ -1,0 +1,8 @@
+---
+- name: WikiMUC
+  hosts: debian_clients
+
+  roles:
+    - { role: base, tags: [ 'base' ] }
+    - { role: software, tags: [ 'software' ] }
+    - { role: useraccounts, tags: [ 'useraccounts' ] }

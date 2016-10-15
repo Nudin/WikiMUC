@@ -1,0 +1,4 @@
+---
+
+- name: Change root-Password
+  user: name=root password={{ root_pw }}

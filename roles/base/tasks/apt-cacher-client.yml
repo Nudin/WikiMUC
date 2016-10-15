@@ -1,0 +1,6 @@
+---
+- name: Configure Apt-cacher-ng Proxy
+  lineinfile:
+    dest="/etc/apt/apt.conf.d/00proxy"
+    line='Acquire::http { Proxy "http://gern:3142" }'
+    create=yes

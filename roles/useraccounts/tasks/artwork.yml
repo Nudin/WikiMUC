@@ -1,0 +1,29 @@
+---
+- name: Copy artwork
+  copy: 
+    src: usr/share/images/desktop-base/{{ item }}
+    dest: /usr/share/images/desktop-base/
+  with_items:
+    - wikipedia-weis.jpg
+    - wikipedia-gruen.jpg
+    - wikipedia-hand.jpg
+
+- name: Change default background
+  alternatives: name=desktop-background path=/usr/share/images/desktop-base/wikipedia-weis.jpg
+
+#- name: Change grub background
+#  alternatives: name=desktop-grub path=/usr/share/images/desktop-base/wikipedia-gruen-grub.png
+
+- name: Update grub config
+  command: update-grub2
+
+- name: Change lightdm background
+  replace:
+    dest: /etc/lightdm/lightdm-gtk-greeter.conf
+    regexp: '^background=.*$'
+    replace: 'background=/usr/share/images/desktop-base/wikipedia-weis.jpg'
+
+- name: Set MOTD
+  copy: 
+    src: etc/motd
+    dest: /etc/motd

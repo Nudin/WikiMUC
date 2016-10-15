@@ -1,0 +1,10 @@
+---
+- include: rootpw.yml
+- include: gast_account.yml
+  tags: [gast]
+- include: samba.yml
+  tags: [samba]
+- include: quotas.yml
+  tags: [quotas]
+- include: artwork.yml
+  tags: [artwork]

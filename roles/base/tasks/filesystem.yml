@@ -1,0 +1,39 @@
+---
+
+- name: tmp on tmpfs
+  mount:
+    name=/tmp
+    src=tmpfs
+    fstype=tmpfs
+    state=mounted
+    opts="nodev,nosuid,noexec"
+
+- name: var/tmp on tmpfs
+  mount:
+    name=/var/tmp
+    src=tmpfs
+    fstype=tmpfs
+    state=mounted
+    opts="nodev,nosuid,noexec"
+
+- name: home on tmpfs
+  mount:
+    name=/home
+    src=tmpfs
+    fstype=tmpfs
+    state=mounted
+    opts="nodev,nosuid,noexec"
+
+- name: Mount Datapartition with quota
+  mount:
+    name=/data
+    opts="usrquota,grpquota"
+    state=mounted
+    src=/dev/mapper/vg--wikipedia-data
+    fstype=ext4
+
+- name: Create Public folder
+  file:
+    path=/data/public
+    state=directory
+    mode=777

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Imker
+Comment=Bulk-uploader to Wikimedia Commons
+Comment[de]=Massendownloader für Wikimedia Commons
+Exec=java -jar /opt/java/imker-gui.jar
+Icon=imker
+Terminal=false
+Categories=Network;Wikipedia;

@@ -1,0 +1,39 @@
+#!/bin/bash
+# logout the user after a too long idle-time
+
+(
+
+# 15 Minutes
+IDLE_TIME=$((15*60*1000))
+
+sleep_time=$IDLE_TIME
+
+if [ "$PAM_SERVICE" == "lightdm" ] ; then
+  export DISPLAY=$PAM_TTY
+
+  while sleep $((sleep_time/1000)); do
+    idle=$(xprintidle)
+
+    if [ $idle -gt $IDLE_TIME ] ; then
+      sudo -u gast xmessage "ACHTUNG:
+      Sie sind seit 15 Minuten Inaktiv. 
+      SIE WERDEN IN 1 MINUTE AUSGELOGGT!
+      Um dies zu verhindern, bewegen die die Maus!" &
+      sleep 60
+
+      # if session ist xfce we can logout nicely
+      if pidof xfce4-session; then
+        xfce4-session-logout --logout
+      fi
+      # For all other we simply kill all processes
+      skill -u $PAM_USER
+      break
+    else
+      sleep_time=$((IDLE_TIME-idle+1000))
+    fi
+
+  done
+
+fi
+
+) & # the whole script runs in the background

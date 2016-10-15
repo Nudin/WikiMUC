@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Pattypan
+Comment=Bulk-uploader to Wikimedia Commons
+Comment[de]=Massenuploader für Wikimedia Commons
+Exec=java -jar /opt/java/pattypan.jar
+Terminal=false
+Categories=Network;Wikipedia;

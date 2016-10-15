@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE pam_mount SYSTEM "pam_mount.conf.xml.dtd">
+<pam_mount>
+
+	<!-- debug should come before everything else,
+	since this file is still processed in a single pass
+	from top-to-bottom -->
+	<debug enable="0" />
+
+	<mntoptions allow="nosuid,nodev,loop,encryption,fsck,nonempty,allow_root,allow_other" />
+	<mntoptions require="nosuid,nodev" />
+
+	<logout wait="0" hup="0" term="0" kill="0" />
+
+	<mkmountpoint enable="1" remove="true" />
+
+	<volume uid="10000-20000" fstype="cifs" server="NET.WIKIMUC.ORG" path="home/%(USER)" mountpoint="/home/%(USER)" options="workgroup=net,iocharset=utf8,uid=%(USER),dir_mode=0700,file_mode=0700" />
+	<volume uid="10000-20000" fstype="cifs" server="NET.WIKIMUC.ORG" path="public" mountpoint="/data/publicshare" options="workgroup=net,iocharset=utf8,uid=%(USER),dir_mode=0770,file_mode=0770" />
+
+
+</pam_mount>

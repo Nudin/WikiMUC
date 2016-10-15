@@ -1,0 +1,15 @@
+---
+- hosts: gern
+
+  tasks:
+    - name: Update apt cache
+      apt: update_cache=yes
+
+    - name: Install apt-cacher-ng
+      apt: name=apt-cacher-ng
+
+    - name: Start and enable apt-cacher-ng
+      service: name=apt-cacher-ng state=restarted enabled=yes
+
+
+- include: apt-cacher-client.yml

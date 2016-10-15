@@ -1,0 +1,39 @@
+---
+
+- name: Activated static ARP-table file
+  lineinfile:
+    dest: /etc/rc.local
+    line: arp -f /etc/ethers
+
+- name: Add Jimbo to static ARP-table
+  lineinfile:
+    dest: /etc/ethers
+    line: "b8:27:eb:43:fa:f8 192.168.24.11"
+    create: yes
+
+- name: Create dir for iptables
+  file: 
+    path: /etc/iptables
+    state: directory
+  
+- name: configure firewall for ipv4
+  copy:
+    src: etc/iptables/rules.v4_aptcache
+    dest: /etc/iptables/rules.v4
+  when: ansible_hostname == 'gern'
+  
+- name: configure firewall for ipv4
+  copy:
+    src: etc/iptables/rules.v4
+    dest: /etc/iptables/rules.v4
+  when: ansible_hostname != 'gern'
+  
+- name: configure firewall for ipv6
+  copy:
+    src: etc/iptables/rules.v6
+    dest: /etc/iptables/rules.v6
+
+- name: Activate firewall
+  apt:
+    name: iptables-persistent
+    update_cache: yes

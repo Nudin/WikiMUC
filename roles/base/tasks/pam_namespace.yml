@@ -1,0 +1,25 @@
+---
+
+
+- name: Configure pam_namespace for /tmp
+  lineinfile: 
+    regexp='^/tmp'
+    line="/tmp     /tmp/tmp-inst/         level      root"
+    dest="/etc/security/namespace.conf"
+
+- name: …Configure pam_namespace for /var/tmp
+  lineinfile:
+    regexp='^/var/tmp'
+    line="/var/tmp     /var/tmp/tmp-inst/         level      root"
+    dest="/etc/security/namespace.conf"
+
+- name: Make sure the folders get created by systemd
+  copy:
+    src="etc/tmpfiles_namespace.conf"
+    dest="/etc/tmpfiles.d/namespace.conf"
+
+- name: Add pam_namespace to pam
+  lineinfile:
+    regexp='session .* pam_namespace'
+    line="session required   pam_namespace.so   ignore_config_error"
+    dest=/etc/pam.d/common-session

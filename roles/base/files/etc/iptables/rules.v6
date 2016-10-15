@@ -1,0 +1,22 @@
+## These rules were created according to the guidelines provided by
+## https://wiki.archlinux.org/index.php/Simple_stateful_firewall
+## (State: 2016-08-13)
+
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -s fe80::/64 -p tcp -m tcp --dport 22 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+## Allow ICMPv6 traffic regardless of state for all directly attached subnets
+#-A INPUT -s fe80::/64 -p icmpv6 -j ACCEPT
+## New incoming ICMP echo requests (pings)
+#-A INPUT -p ipv6-icmp --icmpv6-type 128 -m conntrack --ctstate NEW -j ACCEPT
+-A INPUT -p ipv6-icmp -j ACCEPT
+-A INPUT -j REJECT --reject-with icmp6-adm-prohibited
+-A FORWARD -j REJECT --reject-with icmp6-adm-prohibited
+## reverse path filter
+#-t raw -A PREROUTING -m rpfilter -j ACCEPT
+#-t raw -A PREROUTING -j DROP
+COMMIT

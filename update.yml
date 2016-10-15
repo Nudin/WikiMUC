@@ -1,0 +1,10 @@
+---
+- hosts: debian_clients
+
+  tasks:
+    - name: Update apt cache
+      apt: update_cache=yes
+
+    - name: Upgrade packages
+      apt: upgrade=dist
+

@@ -1,0 +1,4 @@
+---
+
+- name: Disable ModemManager
+  service: name=ModemManager.service enabled=no

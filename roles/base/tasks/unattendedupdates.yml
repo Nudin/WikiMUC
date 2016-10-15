@@ -1,0 +1,30 @@
+---
+
+- name: install needed packages
+  apt: name={{ item }} state=present
+  with_items:
+    - unattended-upgrades
+    - apt-listchanges
+    - apticron
+    - heirloom-mailx
+    - exim4
+
+- name: Configure unattended-upgrades
+  copy:
+    src='etc/apt/apt.conf.d/50unattended-upgrades'
+    dest='/etc/apt/apt.conf.d/50unattended-upgrades'
+
+- name: Configure apticron
+  copy:
+    src='etc/apt/apticron/apticron.conf'
+    dest='/etc/apt/apticron/apticron.conf'
+
+- name: Configure apt-listchanges
+  copy:
+    src='etc/apt/listchanges.conf'
+    dest='/etc/apt/listchanges.conf'
+
+- name: Activate auto-upgrades
+  copy:
+    src='etc/apt/apt.conf.d/20auto-upgrades'
+    dest='/etc/apt/apt.conf.d/20auto-upgrades'

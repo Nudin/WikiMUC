@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Commonist
+Comment=Bulk-uploader to Wikimedia Commons
+Comment[de]=Massenuploader für Wikimedia Commons
+Exec=java -jar /opt/java/commonist.jar
+Icon=commonist
+Terminal=false
+Categories=Network;Wikipedia;

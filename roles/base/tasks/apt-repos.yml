@@ -1,0 +1,15 @@
+---
+
+- name: Remove CD-ROM from repo-list
+  lineinfile:
+    dest=/etc/apt/sources.list
+    regexp='^deb cdrom'
+    state=absent
+
+- name: Configure repo-lists
+  synchronize:
+    src=etc/apt/
+    dest=/etc/apt
+
+- name: Multiarch-support
+  shell: dpkg --add-architecture i386
