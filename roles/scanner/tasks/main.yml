@@ -1,0 +1,36 @@
+---
+- name: Create folder for Firmware for Agfa Snapscan e26
+  file: path=/usr/share/sane/snapscan state=directory
+
+- name: Install Firmware for Agfa Snapscan e26
+  copy:
+    src:   usr/share/sane/snapscan/snape26.bin
+    dest: /usr/share/sane/snapscan/snape26.bin
+
+- name: Aktivate Firmware for Agfa Snapscan e26
+  lineinfile:
+    dest: '/etc/sane.d/snapscan.conf'
+    regexp: '^firmware .*$'
+    line: 'firmware /usr/share/sane/snapscan/snape26.bin'
+
+- name: Create folder for Firmware for Artec Ultima 2000
+  file: path=/usr/share/sane/gt68xx state=directory
+
+- name: Install Firmware for Artec Ultima 2000
+  copy:
+    src:   usr/share/sane/gt68xx/eplus2k.usb
+    dest: /usr/share/sane/gt68xx/eplus2k.usb
+
+- name: Aktivate Firmware for Artec Ultima 2000
+  lineinfile:
+    dest: '/etc/sane.d/snapscan.conf'
+    regexp: '^#?firmware "ePlus2k.usb"$'
+    line: 'firmware "ePlus2k.usb"'
+
+- name: Install Sane-Drives
+  apt: name={{ item }} state=present
+  with_items:
+    - libsane-common
+    - libsane-extras
+    - libsane-extras-common
+    - libsane-hpaio
