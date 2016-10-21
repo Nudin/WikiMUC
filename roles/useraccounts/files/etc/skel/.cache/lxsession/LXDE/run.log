@@ -1,0 +1,134 @@
+** Message: environement.vala:58: Exporting primary_variable
+** Message: environement.vala:59: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: environement.vala:149: confir_dirs is null, export : /etc/xdg
+** Message: environement.vala:183: Exporting XDG_CONFIG_DIRS
+** Message: environement.vala:217: custom_data :/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:
+** Message: environement.vala:218: data_dirs :/usr/local/share/:/usr/share/:/usr/share/gdm/:/var/lib/menu-xdg/
+** Message: environement.vala:219: data_dirs not null, export : /usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/local/share/:/usr/share/:/usr/share/gdm/:/var/lib/menu-xdg/
+** Message: environement.vala:224: Exporting XDG_DATA_DIRS
+** Message: utils.vala:68: User config used : /home/gast/.config/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /home/gast/.config/lxsession/LXDE/desktop.conf
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »iGtk/ColorScheme«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »windows_manager/extras«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »panel/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »dock/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »file_manager/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »desktop_manager/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »launcher_manager/autostart«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »composite_manager/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »im1/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »im2/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »widget1/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »notification/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »keybindings/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »screensaver/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »power_manager/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »audio_manager/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »workspace_manager/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »screenshot_manager/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »message_manager/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »upgrade_manager/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »upstart_user_session«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »proxy_manager/http«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »a11y/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »xrandr/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »network_gui/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »webbrowser/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »email/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »pdf_reader/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »video_player/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »audio_player/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »images_display/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »text_editor/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »archive/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »charmap/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »calculator/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »spreadsheet/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »bittorent/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »document/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »webcam/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »burn/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »notes/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »disk_utility/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »tasks/command«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht die Gruppe »Keymap«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »laptop_mode«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »gnome«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht die Gruppe »Updates«
+** Message: settings.vala:527: Die Schlüsselwertedatei enthält nicht den Schlüssel »type«
+** Message: settings.vala:449: Monitoring: /home/gast/.config/lxsession/LXDE/desktop.conf
+** Message: settings.vala:453: Desktop file is already in config home, do nothing
+** Message: environement.vala:79: Exporting variable
+** Message: environement.vala:80: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: environement.vala:176: custom_config :
+** Message: environement.vala:177: config_dirs :/etc/xdg
+** Message: environement.vala:178: confir_dirs not null, export : /etc/xdg
+** Message: environement.vala:183: Exporting XDG_CONFIG_DIRS
+** Message: environement.vala:217: custom_data :
+** Message: environement.vala:218: data_dirs :/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/local/share/:/usr/share/:/usr/share/gdm/:/var/lib/menu-xdg/
+** Message: environement.vala:219: data_dirs not null, export : /usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/local/share/:/usr/share/:/usr/share/gdm/:/var/lib/menu-xdg/
+** Message: environement.vala:224: Exporting XDG_DATA_DIRS
+** Message: utils.vala:79: Config system location : /etc/xdg/lxsession/LXDE
+xprop:  no such property "_NET_NUMBER_OF_DESKTOPS"
+xprop:  no such property "_NET_DESKTOP_NAMES"
+** Message: utils.vala:85: System system path location : /etc/xdg/lxsession/LXDE/conffiles.conf
+** Message: utils.vala:89: Final file used : /etc/xdg/lxsession/LXDE/conffiles.conf
+** Message: options.vala:164: Activate xsettings_manager build-in
+** Message: utils.vala:68: User config used : /home/gast/.config/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /home/gast/.config/lxsession/LXDE/desktop.conf
+** Message: app.vala:717: polkit separate
+** Message: app.vala:717: polkit separate
+** Message: app.vala:76: Launching lxpolkit 
+** Message: utils.vala:68: User config used : /home/gast/.config/lxsession/LXDE/autostart
+** Message: utils.vala:89: Final file used : /home/gast/.config/lxsession/LXDE/autostart
+** Message: autostart.vala:42: Autostart path : /home/gast/.config/lxsession/LXDE/autostart
+** Message: app.vala:76: Launching lxpanel 
+** Message: app.vala:76: Launching pcmanfm 
+
+** (lxsession:1112): WARNING **: app.vala:86: Kindprozess »xscreensaver« konnte nicht ausgeführt werden (Datei oder Verzeichnis nicht gefunden)
+
+** (lxsession:1112): WARNING **: app.vala:87: Error when launching xscreensaver
+** Message: options.vala:107: Create build-in Clipboard
+** Message: main.vala:429: Check keymap_mode (null)
+** Message: app.vala:76: Launching /usr/bin/ssh-agent 
+SSH_AUTH_SOCK=/tmp/ssh-LDK1hVSiqIex/agent.1169; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=1171; export SSH_AGENT_PID;
+echo Agent pid 1171;
+** Message: app.vala:130: /usr/bin/ssh-agent exit with this type of exit: 0
+Openbox-Message: Keine gültige Menü-Datei "/usr/share/lxde/openbox/menu.xml" vorhanden
+** Message: x-terminal-emulator has very limited support, consider choose another terminal
+** Message: x-terminal-emulator has very limited support, consider choose another terminal
+
+(lxpanel:1163): Wnck-WARNING **: Unhandled action type _OB_WM_ACTION_UNDECORATE
+
+(lxpanel:1163): Wnck-WARNING **: Unhandled action type _OB_WM_ACTION_UNDECORATE
+
+(lxpanel:1163): Wnck-WARNING **: Unhandled action type _OB_WM_ACTION_UNDECORATE
+
+(lxpanel:1163): Wnck-WARNING **: Unhandled action type _OB_WM_ACTION_UNDECORATE
+
+(lxpanel:1163): Wnck-WARNING **: Unhandled action type _OB_WM_ACTION_UNDECORATE
+
+(lxpanel:1163): Wnck-WARNING **: Unhandled action type _OB_WM_ACTION_UNDECORATE
+
+(lxpanel:1163): Wnck-WARNING **: Unhandled action type _OB_WM_ACTION_UNDECORATE
+Has notifications support True
+Loading...
+Connecting to daemon...
+Connected.
+displaytray True
+Done loading.
+refreshing...
+refreshing...
+
+(lxpanel:1163): Wnck-WARNING **: Unhandled action type _OB_WM_ACTION_UNDECORATE
+** Message: settings.vala:496: Desktop file change, reloading XSettings daemon
+** Message: options.vala:186: Reload xsettings_manager build-in
+** Message: utils.vala:68: User config used : /home/gast/.config/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /home/gast/.config/lxsession/LXDE/desktop.conf
+** Message: settings.vala:490: Reload the xsettings option
+** Message: settings.vala:496: Desktop file change, reloading XSettings daemon
+** Message: options.vala:186: Reload xsettings_manager build-in
+** Message: utils.vala:68: User config used : /home/gast/.config/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /home/gast/.config/lxsession/LXDE/desktop.conf
+** Message: settings.vala:490: Reload the xsettings option
