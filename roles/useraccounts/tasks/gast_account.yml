@@ -41,12 +41,16 @@
     regexp="session .* pam_mkhomedir"
     line="session    required    pam_mkhomedir.so skel=/etc/skel/ umask=0022"
     dest=/etc/pam.d/common-session
+  tags:
+    - skel
 
 - name: Install configuration of guest-user
   synchronize:
     src=etc/skel/ dest=/etc/skel/
     recursive=yes
     delete=yes
+  tags:
+    - skel
 
 - name: create directory on data-partition
   file:
@@ -59,6 +63,8 @@
     state=link
     src="/data/gast"
     dest="/etc/skel/Lokale_Daten"
+  tags:
+    - skel
 
 - name: Set default desktop to lxde
   lineinfile:
