@@ -1,6 +1,6 @@
 ---
 
-- include_vars: passwords.yml
+- include_vars: password.yml
 
 - name: Install needed software
   apt: 
@@ -79,3 +79,18 @@
 - name: Add computer to ads
   shell: net ads join -U Administrator%{{ domainpw }}
 
+- name: Install passwordchange-script
+  copy:
+    src: usr/bin/changepassword
+    dest: /usr/bin/changepassword
+    mode: 0755
+    owner: root
+    group: root
+
+- name: Add passwordchange-script to menue
+  copy:
+    src: usr/share/applications/changepassword.desktop
+    dest: /usr/share/applications/changepassword.desktop
+    mode: 0755
+    owner: root
+    group: root
