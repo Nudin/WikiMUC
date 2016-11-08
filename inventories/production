@@ -1,0 +1,18 @@
+localhost	  ansible_connection=local
+
+[debian_clients]
+gern        ansible_user=root
+tivoli      ansible_user=root
+giesing     ansible_user=root
+laim        ansible_user=root
+riem        ansible_user=root
+#solln       ansible_user=root
+#lehl        ansible_user=root
+hadern      ansible_user=root
+pasing      ansible_user=root
+borstei     ansible_user=root
+fasanerie   ansible_user=root
+allach      ansible_user=root
+
+[debcacher_proxy]
+gern        ansible_user=root

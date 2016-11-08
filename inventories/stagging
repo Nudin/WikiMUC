@@ -1,0 +1,7 @@
+localhost	  ansible_connection=local
+
+[debian_clients]
+allach      ansible_user=root
+
+[debcacher_proxy]
+gern        ansible_user=root
