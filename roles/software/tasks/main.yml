@@ -24,6 +24,8 @@
     - ntpdate
     - git
     - keepassx
+    - python3-pip
+    - ipython3
 
 - name: Install Desktop
   apt: name={{ item }} state=present
