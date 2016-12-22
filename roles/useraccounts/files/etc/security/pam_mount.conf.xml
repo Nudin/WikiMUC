@@ -15,7 +15,8 @@
 	<mkmountpoint enable="1" remove="true" />
 
 	<volume uid="10000-20000" fstype="cifs" server="NET.WIKIMUC.ORG" path="home/%(USER)" mountpoint="/home/%(USER)" options="workgroup=net,iocharset=utf8,uid=%(USER),dir_mode=0700,file_mode=0700" />
-	<volume uid="10000-20000" fstype="cifs" server="NET.WIKIMUC.ORG" path="public" mountpoint="/data/publicshare" options="workgroup=net,iocharset=utf8,uid=%(USER),dir_mode=0770,file_mode=0770" />
+	<volume uid="10000-20000" fstype="cifs" server="NET.WIKIMUC.ORG" path="public" mountpoint="/home/%(USER)/Öffentlich" options="workgroup=net,iocharset=utf8,uid=%(USER),dir_mode=0770,file_mode=0770" />
+	<volume uid="10000-20000" path="/data/public" mountpoint="/home/%(USER)/Lokale Festplatte" options="bind" />
 
 
 </pam_mount>
