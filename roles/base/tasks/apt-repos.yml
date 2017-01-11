@@ -13,3 +13,6 @@
 
 - name: Multiarch-support
   shell: dpkg --add-architecture i386
+
+- name: Update Apt-Cache
+  apt: update_cache=yes
