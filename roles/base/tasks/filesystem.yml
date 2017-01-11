@@ -37,3 +37,9 @@
     path=/data/public
     state=directory
     mode=777
+
+- name: Copy INFO-File
+  copy:
+    src=data/public/INFO
+    dest=/data/public/INFO
+    mode=444
