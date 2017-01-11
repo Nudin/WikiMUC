@@ -1,0 +1,82 @@
+---
+- name: Install Office
+  apt: name={{ item }} state=present
+  with_items:
+    - libreoffice
+    - libreoffice-gtk
+    - libreoffice-l10n-de
+    - libreoffice-help-de
+    - calibre
+  tags:
+    - office
+
+- name: Install Spellchecker
+  apt: name={{ item }} state=present
+  with_items:
+    - hunspell-de-de
+    - hunspell-en-us
+    - hunspell-fr-modern
+    - aspell-en
+    - aspell-de
+    - hyphen-en-us
+    - hyphen-de
+    - mythes-de
+  tags:
+    - spellchecker
+
+- name: Install Editors and IDE
+  apt: name={{ item }} state=present
+  with_items:
+    - geany
+    - meld
+    - gedit
+    - vim-gtk
+
+- name: Install PDF-Software
+  apt: name={{ item }} state=present
+  with_items:
+    - cups-pdf
+    - evince-gtk
+    - okular
+    - mupdf
+  tags:
+    - pdf
+
+- name: Install graphic applications
+  apt: 
+    name: "{{ item }}"
+    state: latest
+    default_release: "{{ansible_distribution_release}}-backports"
+  with_items:
+    - gimp
+    - krita
+    - xsane
+    - imagemagick
+    - inkscape
+    - hugin
+    - rawtherapee
+    - darktable
+  tags: 
+    - imagesoftware
+
+- name: Install browser
+  apt: name={{ item }} update_cache=yes state=present
+  with_items:
+    - iceweasel
+      #  - firefox
+    - iceweasel-l10n-de
+  ignore_errors: true
+  tags:
+    - browser
+    - firefox
+
+- name: Install multimedia applications
+  apt: name={{ item }} state=present
+  with_items:
+    - vlc
+    - mpv
+  tags:
+    - multimedia
+
+- name: Install keepassx
+  apt: name=keepassx state=present

@@ -1,0 +1,21 @@
+---
+- name: Install Desktop
+  apt: name={{ item }} state=present
+  with_items:
+    - lxde
+    - xfce4
+    - xfce4-goodies
+    - lightdm
+    - xdg-utils
+    - firmware-linux-nonfree
+    - ttf-mscorefonts-installer
+    - fonts-noto
+    - ttf-liberation
+    - ttf-dejavu
+    - fonts-hanazono
+
+- name: Deinstall xscreensaver
+  apt: name={{ item }} state=absent
+  with_items:
+    - xscreensaver
+    - xscreensaver-data

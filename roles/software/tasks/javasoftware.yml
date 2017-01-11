@@ -1,0 +1,25 @@
+---
+- name: Install Java
+  apt: name={{ item }} state=present default_release=jessie-backports
+  with_items:
+    - openjdk-8-jre
+
+- name: Create folder for java-apps
+  file:
+    path=/opt/java
+    state=directory
+
+- name: Install various Wikipedia specific java-apps (1/3)
+  synchronize:
+    src=wikijavaapps/desktop/
+    dest=/usr/share/applications/
+
+- name: Install various Wikipedia specific java-apps (2/3)
+  synchronize:
+    src=wikijavaapps/jar/
+    dest=/opt/java/
+
+- name: Install various Wikipedia specific java-apps (3/3)
+  synchronize:
+    src=wikijavaapps/pixmaps/
+    dest=/usr/share/pixmaps/
