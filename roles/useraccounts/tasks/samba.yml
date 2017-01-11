@@ -36,6 +36,9 @@
     src: etc/krb5.conf
     dest: /etc/krb5.conf
 
+- name: Set Time via ntp
+  command: ntpdate de.pool.ntp.org
+
 - name: Kinit
   shell: echo {{ domainpw }} | kinit --password-file=STDIN Administrator@{{ REALM }}
 
