@@ -7,3 +7,4 @@
     - { role: software, tags: [ 'software' ] }
     - { role: useraccounts, tags: [ 'useraccounts' ] }
     - { role: scanner, tags: [ 'scanner' ] }
+    - { role: ipsec, tags: [ 'ipsec' ] }

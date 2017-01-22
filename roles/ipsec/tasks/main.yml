@@ -1,0 +1,75 @@
+---
+- name: Install IPSec
+  apt: name={{ item }} state=present
+  with_items:
+    - ipsec-tools
+    - racoon
+
+- name: Create Key and Cert-Sining-Request
+  command: "openssl req -new -days 365 -newkey rsa:2048 -nodes
+              -subj '/CN={{ansible_hostname}}.NET.WIKIMUC.ORG/O=WikiMUC/C=DE'
+              -keyout /etc/racoon/certs/{{ansible_hostname}}key.pem
+                -out /etc/racoon/certs/{{ansible_hostname}}req.pem"
+  args:
+    creates: /etc/racoon/certs/{{ansible_hostname}}key.pem
+  register: newreq
+
+- name: Set file-attr
+  file:
+     path: /etc/racoon/certs/{{ansible_hostname}}key.pem
+     owner: root
+     group: root
+     mode: 0600
+
+- name: Get Req
+  fetch:
+     src: /etc/racoon/certs/{{ansible_hostname}}req.pem
+     dest: /home/pi/certs/
+     flat: yes
+  when: newreq.changed
+
+- name: Copy CA-Cert to hosts
+  copy:
+    src: etc/racoon/certs/cacert.pem
+    dest: /etc/racoon/certs/
+  register: something
+
+- name: Copy Cert to hosts
+  copy:
+    src: /home/pi/certs/{{ansible_hostname}}cert.pem
+    dest: /etc/racoon/certs/
+  register: something
+
+- name: delete Req
+  file:
+    path: /etc/racoon/certs/{{ansible_hostname}}req.pem
+    state: absent
+  register: something
+
+- name: Setup SPD
+  copy: 
+    src: etc/ipsec-tools.conf
+    dest: /etc/ipsec-tools.conf
+  register: spd
+  
+- name: Setup Racoon
+  template:
+    src: racoon.conf
+    dest: /etc/racoon/racoon.conf
+  register: something
+
+- name: Start Racoon
+  command: systemctl restart racoon
+  when: something.changed
+
+- name: Enable Racoon
+  command: systemctl enable racoon
+  when: something.changed
+
+- name: Apply SPD
+  command: /etc/ipsec-tools.conf
+  when: spd.changed
+
+- name: Enable setkey-deamon
+  command: systemctl enable setkey
+  when: spd.changed
