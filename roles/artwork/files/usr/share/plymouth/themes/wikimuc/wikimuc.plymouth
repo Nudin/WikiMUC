@@ -1,0 +1,13 @@
+[Plymouth Theme]
+Name=Wikimuc
+Description=WikiMuc-Spinner
+ModuleName=two-step
+
+[two-step]
+ImageDir=/usr/share/plymouth/themes/wikimuc
+HorizontalAlignment=.5
+VerticalAlignment=.85
+Transition=none
+TransitionDuration=0.0
+BackgroundStartColor=0x202020
+BackgroundEndColor=0x202020
