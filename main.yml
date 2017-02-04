@@ -8,3 +8,4 @@
     - { role: useraccounts, tags: [ 'useraccounts' ] }
     - { role: scanner, tags: [ 'scanner' ] }
     - { role: ipsec, tags: [ 'ipsec' ] }
+    - { role: artwork, tags: [ 'artwork' ] }

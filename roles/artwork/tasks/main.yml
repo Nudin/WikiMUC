@@ -27,3 +27,7 @@
   copy: 
     src: etc/motd
     dest: /etc/motd
+
+- include: plymouth.yml
+  tags:
+    - plymouth
