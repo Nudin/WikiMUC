@@ -13,6 +13,7 @@
     - ttf-liberation
     - ttf-dejavu
     - fonts-hanazono
+    - hplip ## Uninstall this after printserver is set up
 
 - name: Deinstall xscreensaver
   apt: name={{ item }} state=absent

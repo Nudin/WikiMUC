@@ -36,7 +36,7 @@
 - include: javasoftware.yml
   tags: [java, javasoftware]
 
-- name: Install winehq
+- name: Uninstall winehq
   apt:
     name={{ item }}
     state=absent
