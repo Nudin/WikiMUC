@@ -1,0 +1,11 @@
+[KSharedDataCache]
+InfoOutput=4
+
+[kbuildsycoca4]
+InfoOutput=2
+
+[kdecore (services)]
+InfoOutput=2
+
+[konqueror]
+InfoOutput=4

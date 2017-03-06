@@ -1,0 +1,4581 @@
+1.2
+lxde-applications.menu+hidden
+18
+D/home/gast/.local/share/desktop-directories
+D/usr/local/share/desktop-directories
+D/usr/share/desktop-directories
+D/usr/share/gdm/desktop-directories
+D/var/lib/menu-xdg/desktop-directories
+D/var/lib/menu-xdg/desktop-directories/menu-xdg
+D/home/gast/.local/share/applications
+D/usr/local/share/applications
+D/usr/share/applications
+D/usr/share/applications/kde4
+D/usr/share/gdm/applications
+D/var/lib/menu-xdg/applications
+D/var/lib/menu-xdg/applications/menu-xdg
+D/etc/xdg/menus/applications-merged
+D/home/gast/.config/menus/applications-merged
+F/home/gast/.config/menus/lxde-applications.menu
+F/etc/xdg/menus/lxde-applications.menu
+F/etc/xdg/menus/debian-menu.menu
+Unity;
++Applications
+Anwendungen
+Anwendungen
+applications-other
+lxde-menu-applications.directory
+2
+0
++Universal Access
+Barrierefreiheit
+Einstellungen zur Barrierefreiheit
+preferences-desktop-accessibility
+lxde-utility-accessibility.directory
+2
+4
+
++Education
+Bildung
+
+applications-science
+lxde-education.directory
+2
+0
+-libreoffice-math.desktop
+LibreOffice Math
+Wissenschaftliche Formeln setzen und bearbeiten - Math macht's möglich.
+libreoffice-math
+
+8
+Formeleditor
+libreoffice --math %U
+2
+0
+
+
+Office;Spreadsheet;Education;Science;Math
+Equation,OpenDocument Formula,Formula,odf,MathML
+
++Office
+Büro
+Büroanwendungen
+applications-office
+lxde-office.directory
+2
+0
+-calibre-gui.desktop
+calibre
+E-Book Bibliotheksverwaltung
+calibre-gui
+
+8
+E-Book Bibliotheksverwaltung
+calibre %f
+0
+0
+
+
+Office;Database;FileTools;Viewer;Qt
+
+-kde4-calligra.desktop
+Calligra
+
+
+calligra.desktop
+9
+
+khelpcenter help:/calligra
+4
+0
+
+
+Qt;KDE;Office
+
+-evince.desktop
+Dokumentenbetrachter
+Mehrseitige Dokumente anzeigen
+evince
+
+8
+
+evince %U
+2
+0
+evince
+
+GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics
+pdf,ps,postscript,dvi,xps,djvu,tiff,Dokument,Präsentation
+-evince-previewer.desktop
+Druckvorschau
+Vorschau auf das Dokument vor dem Druck
+document-print-preview
+
+8
+
+evince-previewer %U
+6
+0
+evince-previewer
+
+GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics
+
+-ebook-viewer.desktop
+E-Book Viewer
+E-Book Viewer
+calibre
+
+8
+
+ebook-viewer %F
+0
+0
+ebook-viewer
+
+Office;Graphics;Viewer
+
+-kde4-krita_flipbook.desktop
+Krita
+
+krita
+krita_flipbook.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_bmp.desktop
+Krita
+
+krita
+krita_bmp.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_jp2.desktop
+Krita
+
+krita
+krita_jp2.desktop
+9
+Programm zum Zeichnen und Bearbeiten von Bildern
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_ppm.desktop
+Krita
+
+krita
+krita_ppm.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_odg.desktop
+Krita
+
+krita
+krita_odg.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_png.desktop
+Krita
+
+krita
+krita_png.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_tiff.desktop
+Krita
+
+krita
+krita_tiff.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_psd.desktop
+Krita
+
+krita
+krita_psd.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_raw.desktop
+Krita
+
+krita
+krita_raw.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_ora.desktop
+Krita
+
+krita
+krita_ora.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_pdf.desktop
+Krita
+
+krita
+krita_pdf.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_xcf.desktop
+Krita
+
+krita
+krita_xcf.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_jpeg.desktop
+Krita
+
+krita
+krita_jpeg.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_exr.desktop
+Krita
+
+krita
+krita_exr.desktop
+9
+Programm zum Zeichnen und Bearbeiten von Bildern
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-libreoffice-startcenter.desktop
+LibreOffice
+Die produktive Bürosoftware ist kompatibel zu dem offenen und standardisierten OpenDocument Format (ODF). Unterstützt von The Document Foundation.
+libreoffice-startcenter
+
+8
+Office
+libreoffice %U
+2
+0
+
+
+Office;X-Red-Hat-Base;X-SuSE-Core-Office;X-MandrivaLinux-Office-Other
+
+-libreoffice-base.desktop
+LibreOffice Base
+Verwalten von Datenbanken, Erstellen von Abfragen und Berichten - Base macht's möglich.
+libreoffice-base
+
+8
+Datenbankentwicklung
+libreoffice --base %U
+2
+0
+
+
+Office;Database
+Data,SQL
+-libreoffice-calc.desktop
+LibreOffice Calc
+Berechnungen ausführen, Informationen analysieren und Listen in Tabellenform verwalten - Calc macht's möglich.
+libreoffice-calc
+
+8
+Tabellenkalkulation
+libreoffice --calc %U
+2
+0
+
+
+Office;Spreadsheet
+Accounting,Stats,OpenDocument Spreadsheet,Chart,Microsoft Excel,Microsoft Works,OpenOffice Calc,ods,xls,xlsx
+-libreoffice-draw.desktop
+LibreOffice Draw
+Zeichnungen erstellen und bearbeiten, Flussdiagramme entwerfen und Logos kreieren - Draw macht's möglich.
+libreoffice-draw
+
+8
+Zeichenprogramm
+libreoffice --draw %U
+2
+0
+
+
+Office;Graphics;FlowChart;Graphics;2DGraphics;VectorGraphics
+Vector,Schema,Diagram,Layout,OpenDocument Graphics,Microsoft Publisher,Corel Draw,cdr,odg,svg
+-libreoffice-impress.desktop
+LibreOffice Impress
+Erstellen und bearbeiten von Präsentationen für Dia-Vorführungen, Meetings und Web-Auftritte mithilfe von Impress.
+libreoffice-impress
+
+8
+Präsentation
+libreoffice --impress %U
+2
+0
+
+
+Office;Presentation
+Slideshow,Slides,OpenDocument Presentation,Microsoft PowerPoint,Microsoft Works,OpenOffice Impress,odp,ppt,pptx
+-libreoffice-math.desktop
+LibreOffice Math
+Wissenschaftliche Formeln setzen und bearbeiten - Math macht's möglich.
+libreoffice-math
+
+8
+Formeleditor
+libreoffice --math %U
+2
+0
+
+
+Office;Spreadsheet;Education;Science;Math
+Equation,OpenDocument Formula,Formula,odf,MathML
+-libreoffice-writer.desktop
+LibreOffice Writer
+Erstellen und bearbeiten von Text und Grafiken in Briefen, Reports, Dokumenten und Web-Seiten - Writer macht's möglich.
+libreoffice-writer
+
+8
+Textverarbeitung
+libreoffice --writer %U
+2
+0
+
+
+Office;WordProcessor
+Text,Letter,Fax,Document,OpenDocument Text,Microsoft Word,Microsoft Works,Lotus WordPro,OpenOffice Writer,CV,odt,doc,docx,rtf
+-mutt.desktop
+Mutt
+Einfaches, Text-basiertes Mailprogramm
+mutt
+
+8
+
+mutt %u
+5
+0
+
+
+Office;Network;Email
+
+-kde4-okular.desktop
+Okular
+
+okular
+okular.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+0
+0
+
+
+Qt;KDE;Graphics;Office;Viewer
+
+-xfcalendar.desktop
+Orage Calendar
+Desktop calendar
+xfcalendar
+
+8
+Calendar
+orage
+2
+0
+
+
+X-XFCE;Office;Calendar;GTK
+
+-globaltime.desktop
+Orage Globaltime
+Show clocks from different countries
+orage_globaltime
+
+8
+Globaltime
+globaltime
+2
+0
+
+
+X-XFCE;Office;Clock;GTK;Utility
+
+-xfce4-dict.desktop
+Wörterbuch
+Ein Programm zum Abfragen verschiedener Wörterbücher.
+xfce4-dict
+
+8
+Wörterbuchprogramm
+xfce4-dict
+2
+0
+
+
+Office;TextTools;Dictionary;GTK
+
+
++Debian
+Debian
+
+debian-logo
+debian.directory
+2
+0
++Applications
+Applications
+
+debian-applications
+debian-applications.directory
+5
+0
++Accessibility
+Accessibility
+
+debian-applications-accessibility
+debian-applications-accessibility.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Accessibility-xmag.desktop
+Xmag
+Xmag: magnify parts of the X screen
+
+X-Debian-Applications-Accessibility-xmag.desktop
+12
+
+xmag
+0
+0
+
+
+X-Debian-Applications-Accessibility
+
+
++Data Management
+Data Management
+
+debian-applications-data-management
+debian-applications-data-management.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Data-Management-libreoffice_base.desktop
+LibreOffice Base
+
+/usr/share/icons/hicolor/32x32/apps/libreoffice-base.xpm
+X-Debian-Applications-Data-Management-libreoffice_base.desktop
+12
+
+/usr/bin/libreoffice --base
+0
+0
+
+
+X-Debian-Applications-Data-Management
+
+
++Editors
+Editors
+
+debian-applications-editors
+debian-applications-editors.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Editors-gedit.desktop
+Gedit
+Light-weight GNOME text editor
+/usr/share/pixmaps/gedit-icon.xpm
+X-Debian-Applications-Editors-gedit.desktop
+12
+
+/usr/bin/gedit
+0
+0
+
+
+X-Debian-Applications-Editors
+
+-menu-xdg-X-Debian-Applications-Editors-gvim.desktop
+GVIM
+GVIM, graphical Vi IMproved (GTK GUI)
+/usr/share/pixmaps/vim-32.xpm
+X-Debian-Applications-Editors-gvim.desktop
+12
+
+/usr/bin/vim.gtk -g -f
+0
+0
+
+
+X-Debian-Applications-Editors
+
+-menu-xdg-X-Debian-Applications-Editors-leafpad.desktop
+LeafPad
+GTK+ based simple text editor
+/usr/share/pixmaps/leafpad.xpm
+X-Debian-Applications-Editors-leafpad.desktop
+12
+
+/usr/bin/leafpad
+0
+0
+
+
+X-Debian-Applications-Editors
+
+-menu-xdg-X-Debian-Applications-Editors-mousepad.desktop
+MousePad
+
+/usr/share/pixmaps/mousepad.xpm
+X-Debian-Applications-Editors-mousepad.desktop
+12
+
+/usr/bin/mousepad
+0
+0
+
+
+X-Debian-Applications-Editors
+
+-menu-xdg-X-Debian-Applications-Editors-nano.desktop
+Nano
+
+/usr/share/nano/nano-menu.xpm
+X-Debian-Applications-Editors-nano.desktop
+12
+
+/bin/nano
+1
+0
+
+
+X-Debian-Applications-Editors
+
+-menu-xdg-X-Debian-Applications-Editors-xedit.desktop
+Xedit
+Xedit: a simple text editor for X
+
+X-Debian-Applications-Editors-xedit.desktop
+12
+
+xedit
+0
+0
+
+
+X-Debian-Applications-Editors
+
+-menu-xdg-X-Debian-Applications-Editors-xournal.desktop
+xournal
+
+
+X-Debian-Applications-Editors-xournal.desktop
+12
+
+/usr/bin/xournal
+0
+0
+
+
+X-Debian-Applications-Editors
+
+
++File Management
+File Management
+
+debian-applications-file-management
+debian-applications-file-management.directory
+5
+0
+-menu-xdg-X-Debian-Applications-File-Management-pcmanfm.desktop
+PCManFM
+Real Tabbed File Manager
+
+X-Debian-Applications-File-Management-pcmanfm.desktop
+12
+
+/usr/bin/pcmanfm
+0
+0
+
+
+X-Debian-Applications-File-Management
+
+-menu-xdg-X-Debian-Applications-File-Management-thunar.desktop
+Thunar
+Xfce4 File Manager
+
+X-Debian-Applications-File-Management-thunar.desktop
+12
+
+/usr/bin/thunar
+0
+0
+
+
+X-Debian-Applications-File-Management
+
+-menu-xdg-X-Debian-Applications-File-Management-xarchiver.desktop
+Xarchiver
+GTK+ frontend for most used compression formats
+/usr/share/pixmaps/xarchiver.xpm
+X-Debian-Applications-File-Management-xarchiver.desktop
+12
+
+/usr/bin/xarchiver
+0
+0
+
+
+X-Debian-Applications-File-Management
+
+-menu-xdg-X-Debian-Applications-File-Management-xfdesktop.desktop
+Xfdesktop
+Xfce desktop manager
+
+X-Debian-Applications-File-Management-xfdesktop.desktop
+12
+
+xfdesktop
+0
+0
+
+
+X-Debian-Applications-File-Management
+
+
++Graphics
+Graphics
+
+debian-applications-graphics
+debian-applications-graphics.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Graphics-blender.desktop
+Blender
+Blender 3D modeler / renderer
+/usr/share/pixmaps/blender-32x32.xpm
+X-Debian-Applications-Graphics-blender.desktop
+12
+
+/usr/bin/blender
+0
+0
+
+
+X-Debian-Applications-Graphics
+
+-menu-xdg-X-Debian-Applications-Graphics-hugin.desktop
+Hugin
+Hugin, make panoramas from multiple pictures
+
+X-Debian-Applications-Graphics-hugin.desktop
+12
+
+/usr/bin/hugin
+0
+0
+
+
+X-Debian-Applications-Graphics
+
+-menu-xdg-X-Debian-Applications-Graphics-libreoffice_draw.desktop
+LibreOffice Draw
+
+/usr/share/icons/hicolor/32x32/apps/libreoffice-draw.xpm
+X-Debian-Applications-Graphics-libreoffice_draw.desktop
+12
+
+/usr/bin/libreoffice --draw
+0
+0
+
+
+X-Debian-Applications-Graphics
+
+-menu-xdg-X-Debian-Applications-Graphics-ptbatchergui.desktop
+PTBatcherGUI
+Manage Hugin batch queue
+
+X-Debian-Applications-Graphics-ptbatchergui.desktop
+12
+
+/usr/bin/PTBatcherGUI
+0
+0
+
+
+X-Debian-Applications-Graphics
+
+-menu-xdg-X-Debian-Applications-Graphics-rawtherapee.desktop
+RawTherapee
+
+/usr/share/pixmaps/rawtherapee.xpm
+X-Debian-Applications-Graphics-rawtherapee.desktop
+12
+
+rawtherapee
+0
+0
+
+
+X-Debian-Applications-Graphics
+
+-menu-xdg-X-Debian-Applications-Graphics-the_gimp.desktop
+The GIMP
+
+/usr/share/pixmaps/gimp.xpm
+X-Debian-Applications-Graphics-the_gimp.desktop
+12
+
+/usr/bin/gimp
+0
+0
+
+
+X-Debian-Applications-Graphics
+
+-menu-xdg-X-Debian-Applications-Graphics-xsane.desktop
+XSane
+
+/usr/share/pixmaps/xsane.xpm
+X-Debian-Applications-Graphics-xsane.desktop
+12
+
+/usr/bin/xsane
+0
+0
+
+
+X-Debian-Applications-Graphics
+
+-menu-xdg-X-Debian-Applications-Graphics-x_window_snapshot.desktop
+X Window Snapshot
+X Window Snapshot: take snapshot of any X window (xwd|xwud)
+
+X-Debian-Applications-Graphics-x_window_snapshot.desktop
+12
+
+xwd | xwud
+0
+0
+
+
+X-Debian-Applications-Graphics
+
+
++Network
+Network
+
+debian-applications-network
+debian-applications-network.directory
+5
+0
++Communication
+Communication
+
+debian-applications-network-communication
+debian-applications-network-communication.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Network-Communication-heirloom-mailx.desktop
+heirloom-mailx
+
+
+X-Debian-Applications-Network-Communication-heirloom-mailx.desktop
+12
+
+/usr/bin/heirloom-mailx
+1
+0
+
+
+X-Debian-Applications-Network-Communication
+
+-menu-xdg-X-Debian-Applications-Network-Communication-mutt.desktop
+Mutt
+
+/usr/share/pixmaps/mutt.xpm
+X-Debian-Applications-Network-Communication-mutt.desktop
+12
+
+/usr/bin/mutt
+1
+0
+
+
+X-Debian-Applications-Network-Communication
+
+-menu-xdg-X-Debian-Applications-Network-Communication-telnet.desktop
+Telnet
+
+
+X-Debian-Applications-Network-Communication-telnet.desktop
+12
+
+/usr/bin/telnet
+1
+0
+
+
+X-Debian-Applications-Network-Communication
+
+-menu-xdg-X-Debian-Applications-Network-Communication-xbiff.desktop
+Xbiff
+Xbiff: mailbox flag for X
+
+X-Debian-Applications-Network-Communication-xbiff.desktop
+12
+
+xbiff
+0
+0
+
+
+X-Debian-Applications-Network-Communication
+
+
++File Transfer
+File Transfer
+
+debian-applications-network-file-transfer
+debian-applications-network-file-transfer.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Network-File-Transfer-deluge_bittorrent_client.desktop
+Deluge BitTorrent Client
+Bittorrent client written in Python/PyGTK
+/usr/share/pixmaps/deluge.xpm
+X-Debian-Applications-Network-File-Transfer-deluge_bittorrent_client.desktop
+12
+
+/usr/bin/deluge
+0
+0
+
+
+X-Debian-Applications-Network-File-Transfer
+
+
++Monitoring
+Monitoring
+
+debian-applications-network-monitoring
+debian-applications-network-monitoring.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Network-Monitoring-wicd.desktop
+WICD
+
+/usr/share/pixmaps/wicd-gtk.xpm
+X-Debian-Applications-Network-Monitoring-wicd.desktop
+12
+
+/usr/bin/wicd-gtk
+0
+0
+
+
+X-Debian-Applications-Network-Monitoring
+
+
++Web Browsing
+Web Browsing
+
+debian-applications-network-web-browsing
+debian-applications-network-web-browsing.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Network-Web-Browsing-w3m.desktop
+w3m
+
+
+X-Debian-Applications-Network-Web-Browsing-w3m.desktop
+12
+
+/usr/bin/w3m /usr/share/doc/w3m/MANUAL.html
+1
+0
+
+
+X-Debian-Applications-Network-Web-Browsing
+
+
+
++Office
+Office
+
+debian-applications-office
+debian-applications-office.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Office-libreoffice_calc.desktop
+LibreOffice Calc
+
+/usr/share/icons/hicolor/32x32/apps/libreoffice-calc.xpm
+X-Debian-Applications-Office-libreoffice_calc.desktop
+12
+
+/usr/bin/libreoffice --calc
+0
+0
+
+
+X-Debian-Applications-Office
+
+-menu-xdg-X-Debian-Applications-Office-libreoffice_impress.desktop
+LibreOffice Impress
+
+/usr/share/icons/hicolor/32x32/apps/libreoffice-impress.xpm
+X-Debian-Applications-Office-libreoffice_impress.desktop
+12
+
+/usr/bin/libreoffice --impress
+0
+0
+
+
+X-Debian-Applications-Office
+
+-menu-xdg-X-Debian-Applications-Office-libreoffice_writer.desktop
+LibreOffice Writer
+
+/usr/share/icons/hicolor/32x32/apps/libreoffice-writer.xpm
+X-Debian-Applications-Office-libreoffice_writer.desktop
+12
+
+/usr/bin/libreoffice --writer
+0
+0
+
+
+X-Debian-Applications-Office
+
+
++Programming
+Programming
+
+debian-applications-programming
+debian-applications-programming.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Programming-geany.desktop
+Geany
+
+/usr/share/pixmaps/geany.xpm
+X-Debian-Applications-Programming-geany.desktop
+12
+
+/usr/bin/geany
+0
+0
+
+
+X-Debian-Applications-Programming
+
+-menu-xdg-X-Debian-Applications-Programming-meld.desktop
+Meld
+
+
+X-Debian-Applications-Programming-meld.desktop
+12
+
+/usr/bin/meld
+0
+0
+
+
+X-Debian-Applications-Programming
+
+-menu-xdg-X-Debian-Applications-Programming-python_(v2.7).desktop
+Python (v2.7)
+
+/usr/share/pixmaps/python2.7.xpm
+X-Debian-Applications-Programming-python_(v2.7).desktop
+12
+
+/usr/bin/python2.7
+1
+0
+
+
+X-Debian-Applications-Programming
+
+-menu-xdg-X-Debian-Applications-Programming-python_(v3.4).desktop
+Python (v3.4)
+
+/usr/share/pixmaps/python3.4.xpm
+X-Debian-Applications-Programming-python_(v3.4).desktop
+12
+
+/usr/bin/python3.4
+1
+0
+
+
+X-Debian-Applications-Programming
+
+
++Science
+Science
+
+debian-applications-science
+debian-applications-science.directory
+5
+0
++Mathematics
+Mathematics
+
+debian-applications-science-mathematics
+debian-applications-science-mathematics.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Science-Mathematics-bc.desktop
+Bc
+
+
+X-Debian-Applications-Science-Mathematics-bc.desktop
+12
+
+/usr/bin/bc
+1
+0
+
+
+X-Debian-Applications-Science-Mathematics
+
+-menu-xdg-X-Debian-Applications-Science-Mathematics-dc.desktop
+Dc
+
+
+X-Debian-Applications-Science-Mathematics-dc.desktop
+12
+
+/usr/bin/dc
+1
+0
+
+
+X-Debian-Applications-Science-Mathematics
+
+-menu-xdg-X-Debian-Applications-Science-Mathematics-galculator.desktop
+galculator
+
+/usr/share/pixmaps/galculator.xpm
+X-Debian-Applications-Science-Mathematics-galculator.desktop
+12
+
+/usr/bin/galculator
+0
+0
+
+
+X-Debian-Applications-Science-Mathematics
+
+-menu-xdg-X-Debian-Applications-Science-Mathematics-gnuplot.desktop
+Gnuplot
+Gnuplot - interactive plotting program
+
+X-Debian-Applications-Science-Mathematics-gnuplot.desktop
+12
+
+/usr/bin/gnuplot4-qt
+1
+0
+
+
+X-Debian-Applications-Science-Mathematics
+
+-menu-xdg-X-Debian-Applications-Science-Mathematics-libreoffice_math.desktop
+LibreOffice Math
+
+/usr/share/icons/hicolor/32x32/apps/libreoffice-math.xpm
+X-Debian-Applications-Science-Mathematics-libreoffice_math.desktop
+12
+
+/usr/bin/libreoffice --math
+0
+0
+
+
+X-Debian-Applications-Science-Mathematics
+
+-menu-xdg-X-Debian-Applications-Science-Mathematics-xcalc.desktop
+Xcalc
+Xcalc: scientific calculator for X
+
+X-Debian-Applications-Science-Mathematics-xcalc.desktop
+12
+
+xcalc
+0
+0
+
+
+X-Debian-Applications-Science-Mathematics
+
+
+
++Shells
+Shells
+
+debian-applications-shells
+debian-applications-shells.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Shells-bash.desktop
+Bash
+
+
+X-Debian-Applications-Shells-bash.desktop
+12
+
+/bin/bash --login
+1
+0
+
+
+X-Debian-Applications-Shells
+
+-menu-xdg-X-Debian-Applications-Shells-dash.desktop
+Dash
+
+
+X-Debian-Applications-Shells-dash.desktop
+12
+
+/bin/dash -i
+1
+0
+
+
+X-Debian-Applications-Shells
+
+-menu-xdg-X-Debian-Applications-Shells-sh.desktop
+Sh
+
+
+X-Debian-Applications-Shells-sh.desktop
+12
+
+/bin/sh --login
+1
+0
+
+
+X-Debian-Applications-Shells
+
+
++Sound
+Sound
+
+debian-applications-sound
+debian-applications-sound.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Sound-alsamixergui.desktop
+Alsamixergui
+
+/usr/share/pixmaps/alsamixergui.xpm
+X-Debian-Applications-Sound-alsamixergui.desktop
+12
+
+/usr/bin/alsamixergui
+0
+0
+
+
+X-Debian-Applications-Sound
+
+-menu-xdg-X-Debian-Applications-Sound-xfce_mixer.desktop
+Xfce Mixer
+
+/usr/share/pixmaps/xfce4-mixer.xpm
+X-Debian-Applications-Sound-xfce_mixer.desktop
+12
+
+/usr/bin/xfce4-mixer
+0
+0
+
+
+X-Debian-Applications-Sound
+
+
++System
+System
+
+debian-applications-system
+debian-applications-system.directory
+5
+0
++Administration
+Administration
+
+debian-applications-system-administration
+debian-applications-system-administration.directory
+5
+0
+-menu-xdg-X-Debian-Applications-System-Administration-about_myself.desktop
+About Myself
+
+/usr/share/pixmaps/user_icon.xpm
+X-Debian-Applications-System-Administration-about_myself.desktop
+12
+
+/usr/bin/userinfo
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-debian_task_selector.desktop
+Debian Task selector
+
+
+X-Debian-Applications-System-Administration-debian_task_selector.desktop
+12
+
+su-to-root -c tasksel
+1
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-disk_management.desktop
+Disk Management
+
+/usr/share/pixmaps/disks.xpm
+X-Debian-Applications-System-Administration-disk_management.desktop
+12
+
+/usr/bin/usermount
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-editres.desktop
+Editres
+Editres: resource editor for X Toolkit applications
+
+X-Debian-Applications-System-Administration-editres.desktop
+12
+
+editres
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-lxappearance.desktop
+LXAppearance
+LXDE GTK+ theme switcher
+
+X-Debian-Applications-System-Administration-lxappearance.desktop
+12
+
+/usr/bin/lxappearance
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-network_admin.desktop
+Network Admin
+
+/usr/share/gnome-system-tools/pixmaps/network.xpm
+X-Debian-Applications-System-Administration-network_admin.desktop
+12
+
+/usr/bin/network-admin
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-openbox_configuration_manager.desktop
+Openbox Configuration Manager
+
+/usr/share/pixmaps/obconf.xpm
+X-Debian-Applications-System-Administration-openbox_configuration_manager.desktop
+12
+
+/usr/bin/obconf
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-password.desktop
+Password
+
+/usr/share/pixmaps/password.xpm
+X-Debian-Applications-System-Administration-password.desktop
+12
+
+/usr/bin/userpasswd
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-reportbug.desktop
+Reportbug
+
+
+X-Debian-Applications-System-Administration-reportbug.desktop
+12
+
+/usr/bin/reportbug --exit-prompt
+1
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-reportbug_(gtk+).desktop
+Reportbug (GTK+)
+
+
+X-Debian-Applications-System-Administration-reportbug_(gtk+).desktop
+12
+
+/usr/bin/reportbug --exit-prompt --ui gtk2
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-services_admin.desktop
+Services Admin
+
+/usr/share/gnome-system-tools/pixmaps/services.xpm
+X-Debian-Applications-System-Administration-services_admin.desktop
+12
+
+/usr/bin/services-admin
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-shares_admin.desktop
+Shares Admin
+
+/usr/share/gnome-system-tools/pixmaps/shares.xpm
+X-Debian-Applications-System-Administration-shares_admin.desktop
+12
+
+/usr/bin/shares-admin
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-time_admin.desktop
+Time Admin
+
+/usr/share/gnome-system-tools/pixmaps/time.xpm
+X-Debian-Applications-System-Administration-time_admin.desktop
+12
+
+/usr/bin/time-admin
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-user_accounts_admin.desktop
+User accounts Admin
+
+/usr/share/gnome-system-tools/pixmaps/users.xpm
+X-Debian-Applications-System-Administration-user_accounts_admin.desktop
+12
+
+/usr/bin/users-admin
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-xclipboard.desktop
+Xclipboard
+Xclipboard: clipboard for text cut and paste operations in X
+
+X-Debian-Applications-System-Administration-xclipboard.desktop
+12
+
+xclipboard
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-xfce_application_finder.desktop
+Xfce Application Finder
+An application finder for the Xfce4 desktop environment
+/usr/share/pixmaps/xfce4-appfinder.xpm
+X-Debian-Applications-System-Administration-xfce_application_finder.desktop
+12
+
+xfce4-appfinder
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-xfontsel.desktop
+Xfontsel
+Xfontsel: font viewer/selector for X
+
+X-Debian-Applications-System-Administration-xfontsel.desktop
+12
+
+xfontsel
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-xkill.desktop
+Xkill
+Xkill: tool to kill X clients by clicking on their windows
+
+X-Debian-Applications-System-Administration-xkill.desktop
+12
+
+xkill
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+-menu-xdg-X-Debian-Applications-System-Administration-xrefresh.desktop
+Xrefresh
+Xrefresh: redraw X screen
+
+X-Debian-Applications-System-Administration-xrefresh.desktop
+12
+
+xrefresh
+0
+0
+
+
+X-Debian-Applications-System-Administration
+
+
++Hardware
+Hardware
+
+debian-applications-system-hardware
+debian-applications-system-hardware.directory
+5
+0
+-menu-xdg-X-Debian-Applications-System-Hardware-lxrandr.desktop
+LXRandR
+LXDE monitor configuration tool
+
+X-Debian-Applications-System-Hardware-lxrandr.desktop
+12
+
+/usr/bin/lxrandr
+0
+0
+
+
+X-Debian-Applications-System-Hardware
+
+-menu-xdg-X-Debian-Applications-System-Hardware-xvidtune.desktop
+Xvidtune
+Xvidtune: tool for customizing X server modelines
+
+X-Debian-Applications-System-Hardware-xvidtune.desktop
+12
+
+xvidtune
+0
+0
+
+
+X-Debian-Applications-System-Hardware
+
+
++Monitoring
+Monitoring
+
+debian-applications-system-monitoring
+debian-applications-system-monitoring.directory
+5
+0
+-menu-xdg-X-Debian-Applications-System-Monitoring-htop.desktop
+htop
+
+
+X-Debian-Applications-System-Monitoring-htop.desktop
+12
+
+/usr/bin/htop
+1
+0
+
+
+X-Debian-Applications-System-Monitoring
+
+-menu-xdg-X-Debian-Applications-System-Monitoring-lxtask.desktop
+LXTask
+LXDE task manager
+
+X-Debian-Applications-System-Monitoring-lxtask.desktop
+12
+
+/usr/bin/lxtask
+0
+0
+
+
+X-Debian-Applications-System-Monitoring
+
+-menu-xdg-X-Debian-Applications-System-Monitoring-pstree.desktop
+Pstree
+
+/usr/share/pixmaps/pstree16.xpm
+X-Debian-Applications-System-Monitoring-pstree.desktop
+12
+
+/usr/bin/pstree.x11
+1
+0
+
+
+X-Debian-Applications-System-Monitoring
+
+-menu-xdg-X-Debian-Applications-System-Monitoring-top.desktop
+Top
+
+
+X-Debian-Applications-System-Monitoring-top.desktop
+12
+
+/usr/bin/top
+1
+0
+
+
+X-Debian-Applications-System-Monitoring
+
+-menu-xdg-X-Debian-Applications-System-Monitoring-xconsole.desktop
+Xconsole
+Xconsole: monitor system console messages with X
+
+X-Debian-Applications-System-Monitoring-xconsole.desktop
+12
+
+xconsole -file /dev/xconsole
+0
+0
+
+
+X-Debian-Applications-System-Monitoring
+
+-menu-xdg-X-Debian-Applications-System-Monitoring-xev.desktop
+Xev
+Xev: display X events
+
+X-Debian-Applications-System-Monitoring-xev.desktop
+12
+
+x-terminal-emulator -e xev
+0
+0
+
+
+X-Debian-Applications-System-Monitoring
+
+-menu-xdg-X-Debian-Applications-System-Monitoring-xload.desktop
+Xload
+Xload: system load average display for X
+
+X-Debian-Applications-System-Monitoring-xload.desktop
+12
+
+xload
+0
+0
+
+
+X-Debian-Applications-System-Monitoring
+
+
++Package Management
+Package Management
+
+debian-applications-system-package-management
+debian-applications-system-package-management.directory
+5
+0
+-menu-xdg-X-Debian-Applications-System-Package-Management-aptitude_package_manager_(text).desktop
+Aptitude Package Manager (text)
+
+
+X-Debian-Applications-System-Package-Management-aptitude_package_manager_(text).desktop
+12
+
+/usr/bin/aptitude-curses
+1
+0
+
+
+X-Debian-Applications-System-Package-Management
+
+
+
++Terminal Emulators
+Terminal Emulators
+
+debian-applications-terminal-emulators
+debian-applications-terminal-emulators.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Terminal-Emulators-lxterminal.desktop
+LXTerminal
+LXDE terminal emulator
+/usr/share/pixmaps/lxterminal.xpm
+X-Debian-Applications-Terminal-Emulators-lxterminal.desktop
+12
+
+/usr/bin/lxterminal
+0
+0
+
+
+X-Debian-Applications-Terminal-Emulators
+
+-menu-xdg-X-Debian-Applications-Terminal-Emulators-xfce_terminal.desktop
+Xfce Terminal
+Xfce Terminal Emulator
+/usr/share/pixmaps/xfce4-terminal.xpm
+X-Debian-Applications-Terminal-Emulators-xfce_terminal.desktop
+12
+
+/usr/bin/xfce4-terminal
+0
+0
+
+
+X-Debian-Applications-Terminal-Emulators
+
+-menu-xdg-X-Debian-Applications-Terminal-Emulators-x-terminal_as_root_(gksu).desktop
+X-Terminal as root (GKsu)
+Runs an X terminal application. Uses GKsu to ask the password.
+/usr/share/pixmaps/gksu-debian.xpm
+X-Debian-Applications-Terminal-Emulators-x-terminal_as_root_(gksu).desktop
+12
+
+/usr/bin/gksu -u root /usr/bin/x-terminal-emulator
+0
+0
+
+
+X-Debian-Applications-Terminal-Emulators
+
+
++Text
+Text
+
+debian-applications-text
+debian-applications-text.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Text-character_map.desktop
+Character map
+
+
+X-Debian-Applications-Text-character_map.desktop
+12
+
+/usr/bin/gucharmap
+0
+0
+
+
+X-Debian-Applications-Text
+
+-menu-xdg-X-Debian-Applications-Text-clipit.desktop
+ClipIt
+
+
+X-Debian-Applications-Text-clipit.desktop
+12
+
+/usr/bin/clipit
+0
+0
+
+
+X-Debian-Applications-Text
+
+
++Video
+Video
+
+debian-applications-video
+debian-applications-video.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Video-gnome_mplayer.desktop
+GNOME MPlayer
+
+/usr/share/pixmaps/gnome-mplayer.xpm
+X-Debian-Applications-Video-gnome_mplayer.desktop
+12
+
+gnome-mplayer
+0
+0
+
+
+X-Debian-Applications-Video
+
+-menu-xdg-X-Debian-Applications-Video-vlc_media_player.desktop
+VLC media player
+
+/usr/share/icons/hicolor/32x32/apps/vlc.xpm
+X-Debian-Applications-Video-vlc_media_player.desktop
+12
+
+/usr/bin/qvlc
+0
+0
+
+
+X-Debian-Applications-Video
+
+
++Viewers
+Viewers
+
+debian-applications-viewers
+debian-applications-viewers.directory
+5
+0
+-menu-xdg-X-Debian-Applications-Viewers-digikam.desktop
+digikam
+
+/usr/share/pixmaps/digikam.xpm
+X-Debian-Applications-Viewers-digikam.desktop
+12
+
+/usr/bin/digikam
+0
+0
+
+
+X-Debian-Applications-Viewers
+
+-menu-xdg-X-Debian-Applications-Viewers-evince.desktop
+Evince
+
+/usr/share/pixmaps/evince.xpm
+X-Debian-Applications-Viewers-evince.desktop
+12
+
+/usr/bin/evince
+0
+0
+
+
+X-Debian-Applications-Viewers
+
+-menu-xdg-X-Debian-Applications-Viewers-xditview.desktop
+Xditview
+Xditview: a ditroff file viewer for X
+
+X-Debian-Applications-Viewers-xditview.desktop
+12
+
+xditview
+0
+0
+
+
+X-Debian-Applications-Viewers
+
+
+
++Games
+Games
+
+debian-games
+debian-games.directory
+5
+0
++Toys
+Toys
+
+debian-games-toys
+debian-games-toys.directory
+5
+0
+-menu-xdg-X-Debian-Games-Toys-oclock.desktop
+Oclock
+Oclock: analog clock for X
+
+X-Debian-Games-Toys-oclock.desktop
+12
+
+oclock
+0
+0
+
+
+X-Debian-Games-Toys
+
+-menu-xdg-X-Debian-Games-Toys-xclock_(analog).desktop
+Xclock (analog)
+Xclock (analog): analog clock for X
+
+X-Debian-Games-Toys-xclock_(analog).desktop
+12
+
+xclock -analog
+0
+0
+
+
+X-Debian-Games-Toys
+
+-menu-xdg-X-Debian-Games-Toys-xclock_(digital).desktop
+Xclock (digital)
+Xclock (digital): digital clock for X
+
+X-Debian-Games-Toys-xclock_(digital).desktop
+12
+
+xclock -digital -update 1
+0
+0
+
+
+X-Debian-Games-Toys
+
+-menu-xdg-X-Debian-Games-Toys-xeyes.desktop
+Xeyes
+Xeyes: demo in which a pair of eyes follow the mouse pointer in X
+
+X-Debian-Games-Toys-xeyes.desktop
+12
+
+xeyes
+0
+0
+
+
+X-Debian-Games-Toys
+
+-menu-xdg-X-Debian-Games-Toys-xlogo.desktop
+Xlogo
+Xlogo: demo which displays the X logo
+
+X-Debian-Games-Toys-xlogo.desktop
+12
+
+xlogo
+0
+0
+
+
+X-Debian-Games-Toys
+
+
+
++Help
+Help
+
+debian-help
+debian-help.directory
+5
+0
+-menu-xdg-X-Debian-Help-info.desktop
+Info
+GNU Info browser
+
+X-Debian-Help-info.desktop
+12
+
+info
+1
+0
+
+
+X-Debian-Help
+
+-menu-xdg-X-Debian-Help-xman.desktop
+Xman
+Xman: manual page browser for X
+
+X-Debian-Help-xman.desktop
+12
+
+xman
+0
+0
+
+
+X-Debian-Help
+
+-menu-xdg-X-Debian-Help-yelp.desktop
+yelp
+
+
+X-Debian-Help-yelp.desktop
+12
+
+/usr/bin/yelp
+0
+0
+
+
+X-Debian-Help
+
+
+
++Development
+Entwicklung
+Werkzeuge zur Software-Entwicklung
+applications-development
+lxde-development.directory
+2
+0
+-geany.desktop
+Geany
+Eine kleine und schnelle Entwicklungsumgebung für GTK2
+geany
+
+8
+Integrierte Entwicklungsumgebung
+geany %F
+2
+0
+
+
+GTK;Development;IDE
+
+-ipython3.desktop
+ipython3
+Enhanced interactive Python shell
+ipython3
+
+8
+IPython3
+ipython3
+1
+0
+
+
+Development;Utility
+
+-meld.desktop
+Meld
+Vergleichen und Zusammenführen von Dateien
+meld
+
+8
+Diff-Betrachter
+meld %F
+2
+0
+
+
+GTK;Development
+
+-python2.7.desktop
+Python (v2.7)
+Python Interpreter (v2.7)
+/usr/share/pixmaps/python2.7.xpm
+
+8
+
+/usr/bin/python2.7
+7
+0
+
+
+Development
+
+-python3.4.desktop
+Python (v3.4)
+Python Interpreter (v3.4)
+/usr/share/pixmaps/python3.4.xpm
+
+8
+
+/usr/bin/python3.4
+7
+0
+
+
+Development
+
+
++Graphics
+Grafik
+Anwendungen zur Grafikbearbeitung
+applications-graphics
+lxde-graphics.directory
+2
+0
+-kde4-expoblending.desktop
+Belichtungsvermischung
+Ein Werkzeug, um Bilder aus einer Belichtungsreihe zu mischen
+kipi-expoblending
+expoblending.desktop
+9
+Belichtungsvermischung
+expoblending %i -caption %c %U
+2
+0
+
+
+Qt;KDE;Graphics
+
+-kde4-scangui.desktop
+Bilder scannen
+Ein Werkzeug, um Bilder mit einem Flachbettscanner zu scannen.
+scanner
+scangui.desktop
+9
+Bilder scannen
+scangui %i -caption %c %U
+2
+0
+
+
+Qt;KDE;Graphics
+
+-blender.desktop
+Blender
+3D-Modellierung, Animation, Rendering und Nachbearbeitung
+blender
+
+8
+3D-Modellierer
+blender %f
+0
+0
+
+
+Graphics;3DGraphics
+3d,cg,modeling,animation,painting,sculpting,texturing,video editing,video tracking,rendering,render engine,cycles,game engine,python
+-darktable.desktop
+Darktable
+Organisiere und entwickle Bilder von Digitalkameras
+darktable
+
+8
+Virtueller Leuchttisch und Dunkelkammer
+darktable %U
+2
+0
+darktable
+
+Graphics;Photography;GTK
+Graphik,Grafik,Photographie,Fotografie,Raw
+-kde4-digikam.desktop
+digiKam
+Verwalten Sie Ihre Bilder wie ein Profi mit allen Möglichkeiten von Open Source.
+digikam
+digikam.desktop
+9
+Fotoverwaltung
+digikam -caption %c %i
+0
+0
+
+
+Qt;KDE;Graphics;Photography
+
+-kde4-dngconverter.desktop
+DNGkonverter
+Ein Werkzeug, um Kamerarohbilder mit einer Stapelverarbeitung nach DNG zu konvertieren.
+kipi-dngconverter
+dngconverter.desktop
+9
+DNG-Bildkonverter
+dngconverter %i -caption %c %U
+0
+0
+
+
+Qt;KDE;Graphics
+
+-evince.desktop
+Dokumentenbetrachter
+Mehrseitige Dokumente anzeigen
+evince
+
+8
+
+evince %U
+2
+0
+evince
+
+GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics
+pdf,ps,postscript,dvi,xps,djvu,tiff,Dokument,Präsentation
+-evince-previewer.desktop
+Druckvorschau
+Vorschau auf das Dokument vor dem Druck
+document-print-preview
+
+8
+
+evince-previewer %U
+6
+0
+evince-previewer
+
+GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics
+
+-ebook-viewer.desktop
+E-Book Viewer
+E-Book Viewer
+calibre
+
+8
+
+ebook-viewer %F
+0
+0
+ebook-viewer
+
+Office;Graphics;Viewer
+
+-kde4-photolayoutseditor.desktop
+Fotolayout-Editor
+Erstellt schöne und professionelle Fotolayouts aus Ihren Fotos
+photolayoutseditor
+photolayoutseditor.desktop
+9
+Verwaltungsprogramm für Fotolayouts
+photolayoutseditor
+0
+0
+
+
+Qt;KDE;Graphics;Photography
+
+-gimp.desktop
+GNU Image Manipulation Program
+Bilder erstellen und Fotografien bearbeiten
+gimp
+
+8
+Bildeditor
+gimp-2.8 %U
+2
+0
+gimp-2.8
+
+Graphics;2DGraphics;RasterGraphics;GTK
+
+-calibrate_lens_gui.desktop
+Hugin Calibrate Lens
+Characterise lens distortion
+hugin
+
+8
+Lens Calibrator
+calibrate_lens_gui
+0
+0
+
+
+Graphics
+
+-hugin.desktop
+Hugin - Panorama-Editor
+Erzeugt Panoramabildern aus mehreren Einzelbildern.
+hugin
+
+8
+Panorama Stitcher
+hugin %f
+0
+0
+
+
+Graphics
+
+-pto_gen.desktop
+Hugin PTO generator
+Initialise a Hugin panorama project from multiple photos
+hugin
+
+8
+Panorama project generator
+pto_gen %F
+4
+0
+
+
+Graphics
+
+-PTBatcherGUI.desktop
+Hugin - Stapelverarbeitung
+Stapelverarbeitung für die Panoramaerstellung
+ptbatcher
+
+8
+Panorama Stapelverarbeitung
+PTBatcherGUI %F
+0
+0
+
+
+Graphics
+
+-display-im6.desktop
+ImageMagick (display Q16)
+Display and edit image files
+display-im6.Q16
+
+8
+
+/usr/bin/display-im6 %f
+0
+0
+
+
+Graphics
+Image,Slideshow,View,Transform,Enhance,F/X,Special Effects
+-display-im6.q16.desktop
+ImageMagick (display Q16)
+Display and edit image files
+display-im6.q16
+
+8
+
+/usr/lib/x86_64-linux-gnu/ImageMagick-6.8.9/bin-Q16/display %f
+0
+0
+
+
+Graphics
+Image,Slideshow,View,Transform,Enhance,F/X,Special Effects
+-inkscape.desktop
+Inkscape
+Skalierbare Vektorgrafiken erstellen und bearbeiten
+inkscape
+
+8
+Vektorgrafikeditor
+inkscape %F
+2
+0
+inkscape
+
+Graphics;VectorGraphics;GTK
+image,editor,vector,drawing
+-kde4-kipiplugins.desktop
+KIPI-Module
+KDE-Bildbearbeitungsschnittstelle
+kipi-logo
+kipiplugins.desktop
+9
+
+""
+4
+0
+
+
+Qt;KDE;Graphics
+
+-kde4-krita_flipbook.desktop
+Krita
+
+krita
+krita_flipbook.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_bmp.desktop
+Krita
+
+krita
+krita_bmp.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita.desktop
+Krita
+Digitales Malen
+calligrakrita
+krita.desktop
+9
+Digitales Malen
+krita %U
+2
+0
+
+
+Qt;KDE;Graphics
+Photo,Photoshop,Paint,art,sketch
+-kde4-krita_jp2.desktop
+Krita
+
+krita
+krita_jp2.desktop
+9
+Programm zum Zeichnen und Bearbeiten von Bildern
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_ppm.desktop
+Krita
+
+krita
+krita_ppm.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_odg.desktop
+Krita
+
+krita
+krita_odg.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_png.desktop
+Krita
+
+krita
+krita_png.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_tiff.desktop
+Krita
+
+krita
+krita_tiff.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_psd.desktop
+Krita
+
+krita
+krita_psd.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_raw.desktop
+Krita
+
+krita
+krita_raw.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_ora.desktop
+Krita
+
+krita
+krita_ora.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_pdf.desktop
+Krita
+
+krita
+krita_pdf.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_xcf.desktop
+Krita
+
+krita
+krita_xcf.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_jpeg.desktop
+Krita
+
+krita
+krita_jpeg.desktop
+9
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-kde4-krita_exr.desktop
+Krita
+
+krita
+krita_exr.desktop
+9
+Programm zum Zeichnen und Bearbeiten von Bildern
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-libreoffice-draw.desktop
+LibreOffice Draw
+Zeichnungen erstellen und bearbeiten, Flussdiagramme entwerfen und Logos kreieren - Draw macht's möglich.
+libreoffice-draw
+
+8
+Zeichenprogramm
+libreoffice --draw %U
+2
+0
+
+
+Office;Graphics;FlowChart;Graphics;2DGraphics;VectorGraphics
+Vector,Schema,Diagram,Layout,OpenDocument Graphics,Microsoft Publisher,Corel Draw,cdr,odg,svg
+-lrfviewer.desktop
+LRF Viewer
+Viewer for LRF files (SONY ebook format files)
+calibre
+
+8
+
+lrfviewer %F
+0
+0
+lrfviewer
+
+Graphics;Viewer
+
+-mupdf.desktop
+MuPDF
+PDF file viewer
+mupdf
+
+8
+PDF file viewer
+mupdf %f
+4
+0
+mupdf
+
+Viewer;Graphics
+
+-kde4-okularApplication_xps.desktop
+Okular
+
+okular
+okularApplication_xps.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-kde4-okularApplication_kimgio.desktop
+Okular
+
+okular
+okularApplication_kimgio.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-kde4-okularApplication_pdf.desktop
+Okular
+
+okular
+okularApplication_pdf.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-kde4-okular.desktop
+Okular
+
+okular
+okular.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+0
+0
+
+
+Qt;KDE;Graphics;Office;Viewer
+
+-kde4-okularApplication_mobi.desktop
+Okular
+
+okular
+okularApplication_mobi.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+4
+0
+okular
+
+Qt;KDE;Graphics;Viewer
+
+-kde4-okularApplication_comicbook.desktop
+Okular
+
+okular
+okularApplication_comicbook.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-kde4-okularApplication_txt.desktop
+Okular
+
+okular
+okularApplication_txt.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-kde4-okularApplication_fb.desktop
+Okular
+
+okular
+okularApplication_fb.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-kde4-okularApplication_ghostview.desktop
+Okular
+
+okular
+okularApplication_ghostview.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-kde4-okularApplication_dvi.desktop
+Okular
+
+okular
+okularApplication_dvi.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-kde4-okularApplication_ooo.desktop
+Okular
+
+okular
+okularApplication_ooo.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-kde4-okularApplication_fax.desktop
+Okular
+
+okular
+okularApplication_fax.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-kde4-okularApplication_plucker.desktop
+Okular
+
+okular
+okularApplication_plucker.desktop
+9
+Dokumentenbetrachter
+okular %U %i -caption %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-kde4-panoramagui.desktop
+Panorama
+Ein Werkzeug, um Bilder mit einem Panorama zusammenzufügen.
+kipi-panorama
+panoramagui.desktop
+9
+Panorama
+panoramagui %i -caption %c %U
+2
+0
+
+
+Qt;KDE;Graphics
+
+-rawtherapee.desktop
+RawTherapee
+An advanced photo development program
+rawtherapee
+
+8
+Raw photo editor
+rawtherapee %f
+0
+0
+
+
+Photography;Graphics;2DGraphics;RasterGraphics;GTK
+
+-ristretto.desktop
+Ristretto Bildbetrachter
+Bilder anschauen leicht gemacht
+ristretto
+
+8
+Bildbetrachter
+ristretto %F
+2
+0
+
+
+GTK;Graphics;Viewer
+
+-xsane.desktop
+XSane Image scanning program
+A program to work with scanner. Can be used as a scanning, copier, OCR, fax tools.
+xsane
+
+8
+
+xsane
+2
+0
+
+
+GTK;Graphics;RasterGraphics;Scanning;OCR;2DGraphics
+
+
++Internet
+Internet
+Programme, um Internet-Dienste wie E-Mail oder das WWW zu nutzen
+applications-internet
+lxde-network.directory
+2
+0
+-commonist.desktop
+Commonist
+Massenuploader für Wikimedia Commons
+commonist
+
+8
+
+java -jar /opt/java/commonist.jar
+0
+0
+
+
+Network;Wikipedia
+
+-deluge.desktop
+Deluge
+Dateien über BitTorrent herunterladen und tauschen
+deluge
+
+8
+BitTorrent-Klient
+deluge-gtk %U
+2
+0
+deluge-gtk
+
+Network;FileTransfer;P2P;GTK
+
+-exo-mail-reader.desktop
+E-Mail-Programm
+E-Mails lesen
+internet-mail
+
+8
+
+exo-open --launch MailReader %u
+2
+8
+
+
+Network;X-XFCE;X-Xfce-Toplevel
+
+-firefox-esr.desktop
+Firefox ESR
+Im Internet surfen
+firefox-esr
+
+8
+Webbrowser
+/usr/lib/firefox-esr/firefox-esr %u
+2
+0
+
+
+Network;WebBrowser
+
+-iceweasel.desktop
+Iceweasel→Firefox ESR
+Im Internet surfen
+firefox-esr
+
+8
+Webbrowser
+firefox-esr %u
+0
+0
+
+
+Network;WebBrowser
+
+-imker.desktop
+Imker
+Massendownloader für Wikimedia Commons
+imker
+
+8
+
+java -jar /opt/java/imker-gui.jar
+0
+0
+
+
+Network;Wikipedia
+
+-kde4-knetattach.desktop
+KNetAttach
+
+knetattach
+knetattach.desktop
+9
+Assistent für Netzwerkordner
+knetattach
+0
+4
+
+
+Qt;KDE;Network;RemoteAccess
+
+-kde4-konqbrowser.desktop
+Konqueror
+
+konqueror
+konqbrowser.desktop
+9
+Webbrowser
+kfmclient openProfile webbrowsing
+0
+0
+
+
+Qt;KDE;Network;WebBrowser
+
+-kde4-keditbookmarks.desktop
+Lesezeichen-Editor
+Lesezeichen-Verwaltung und -Editor
+
+keditbookmarks.desktop
+9
+
+keditbookmarks
+4
+0
+
+
+Qt;KDE;Network;WebBrowser
+
+-mutt.desktop
+Mutt
+Einfaches, Text-basiertes Mailprogramm
+mutt
+
+8
+
+mutt %u
+5
+0
+
+
+Office;Network;Email
+
+-pattypan.desktop
+Pattypan
+Massenuploader für Wikimedia Commons
+
+
+8
+
+java -jar /opt/java/pattypan.jar
+0
+0
+
+
+Network;Wikipedia
+
+-vicuna.desktop
+Vicuna
+Massenuploader für Wikimedia Commons
+vicuna
+
+8
+
+java -jar /opt/java/vicuna.jar
+0
+0
+
+
+Network;Wikipedia
+
+-exo-web-browser.desktop
+Webbrowser
+Im Internet surfen
+web-browser
+
+8
+
+exo-open --launch WebBrowser %u
+2
+8
+
+
+Network;X-XFCE;X-Xfce-Toplevel
+
+-lxde-x-www-browser.desktop
+Web Browser
+
+web-browser
+
+8
+X Web Browser
+/usr/bin/x-www-browser %u
+4
+0
+
+
+GTK;WebBrowser;Network
+
+-wicd.desktop
+Wicd Network Manager
+Start the Wicd client without system tray icon
+wicd-gtk
+
+8
+Network Manager
+wicd-gtk --no-tray
+0
+0
+
+
+Application;Network
+
+
++Other
+Sonstige
+Anwendungen, die in keine andere Kategorie eingeordnet werden können
+applications-other
+lxde-other.directory
+2
+0
+-lxde-logout.desktop
+Abmelden
+Abmelden, herunterfahren oder neu starten
+gnome-logout
+
+8
+
+lxde-logout
+4
+0
+
+
+
+
+-notification-daemon.desktop
+Benachrichtigungsdienst
+Benachrichtigungen anzeigen
+
+
+8
+
+/usr/lib/notification-daemon/notification-daemon
+4
+0
+
+
+
+
+-gnome-disk-image-mounter.desktop
+Einhängen von Laufwerksabbildern
+Laufwerksabbilder einhängen
+drive-removable-media
+
+8
+
+gnome-disk-image-mounter %U
+4
+0
+
+
+
+
+-userapp-Firefox-UFE0LY.desktop
+Firefox
+Benutzerdefinition für Firefox
+
+
+6
+
+/usr/lib/firefox-esr/firefox-esr %u
+4
+0
+
+
+
+
+-kde4-kmailservice.desktop
+KMailService
+
+mail-message-new
+kmailservice.desktop
+9
+
+kmailservice %u
+4
+0
+
+
+
+
+-kde4-ktelnetservice.desktop
+KTelnetService
+
+utilities-terminal
+ktelnetservice.desktop
+9
+
+ktelnetservice %u
+4
+0
+
+
+
+
+-libreoffice-xsltfilter.desktop
+LibreOffice XSLT based filters
+
+
+
+8
+XSLT basierte Filter
+libreoffice %U
+6
+0
+
+
+
+
+-gnome-disk-image-writer.desktop
+Schreiber von Laufwerksabbildern
+Laufwerksabbilder auf Geräte schreiben
+drive-removable-media
+
+8
+
+gnome-disks --restore-disk-image %U
+4
+0
+
+
+
+
+-lxde-screenlock.desktop
+ScreenLock
+Lock your screen
+system-lock-screen
+
+8
+
+lxlock
+4
+0
+lxlock
+
+
+
+-panel-desktop-handler.desktop
+Starter zur Leiste hinzufügen
+Einen neuen Starter zur Leiste hinzufügen anhand der Informationen in der Desktop-Datei
+application-x-executable
+
+8
+
+xfce4-panel --add=launcher %u
+4
+0
+
+
+
+
+-gcr-viewer.desktop
+View file
+
+
+
+8
+
+/usr/bin/gcr-viewer
+4
+0
+
+
+
+
+-geoclue-where-am-i.desktop
+Where am I?
+Find your current location
+mark-location-symbolic
+
+8
+Demo geolocation application
+/usr/lib/geoclue-2.0/demos/where-am-i
+5
+0
+
+
+
+geolocation
+-gcr-prompter.desktop
+Zugangsnachfrage
+Den Zugang zu Passwörtern und anderen Geheimnissen entsperren
+security-medium
+
+8
+
+/usr/lib/gcr/gcr-prompter
+4
+0
+
+
+
+
+
++Games
+Spiele
+Spiel und Spaß
+applications-games
+lxde-game.directory
+2
+4
+
++System
+Systemwerkzeuge
+Systemkonfiguration und -überwachung
+applications-system
+lxde-system-tools.directory
+2
+0
+-xfce4-session-logout.desktop
+Abmelden
+Von der Arbeitsumgebung Xfce abmelden
+system-log-out
+
+8
+
+xfce4-session-logout
+0
+8
+
+
+System;X-XFCE;X-Xfce-Toplevel
+
+-Thunar-bulk-rename.desktop
+Bulk-Rename
+Mehrere Dateien gleichzeitig umbenennen
+Thunar
+
+8
+Bulk-Rename
+/usr/lib/x86_64-linux-gnu/Thunar/ThunarBulkRename %F
+2
+0
+
+
+System;Utility;Core;GTK;Filesystem
+
+-Thunar.desktop
+Dateimanager Thunar
+Das Dateisystem im Dateimanager anzeigen
+Thunar
+
+8
+Dateimanager
+thunar %F
+2
+0
+
+
+System;Utility;Core;GTK;FileTools;FileManager
+
+-kde4-dolphin.desktop
+Dolphin
+
+system-file-manager
+dolphin.desktop
+9
+Dateimanager
+dolphin %i -caption %c %u
+0
+0
+
+
+Qt;KDE;System;FileTools;FileManager
+
+-htop.desktop
+Htop
+Show System Processes
+htop
+
+8
+Process Viewer
+htop
+1
+0
+
+
+ConsoleOnly;System
+
+-kde4-kfmclient_war.desktop
+Konqueror
+
+konqueror
+kfmclient_war.desktop
+9
+
+kfmclient openURL %u application/x-webarchive
+4
+0
+
+
+Qt;KDE;System
+
+-kde4-kfmclient_dir.desktop
+Konqueror
+
+konqueror
+kfmclient_dir.desktop
+9
+
+kfmclient openURL %u inode/directory
+4
+0
+
+
+Qt;KDE;System
+
+-kde4-kfmclient_html.desktop
+Konqueror
+
+konqueror
+kfmclient_html.desktop
+9
+
+kfmclient openURL %u text/html
+4
+0
+
+
+Qt;KDE;System
+
+-kde4-kfmclient.desktop
+Konqueror
+
+konqueror
+kfmclient.desktop
+9
+
+kfmclient openURL %u
+4
+0
+
+
+Qt;KDE;System
+
+-kde4-konquerorsu.desktop
+Konqueror (Systemverwaltungsmodus)
+
+konqueror
+konquerorsu.desktop
+9
+
+konqueror --profile filemanagement
+4
+0
+
+
+Qt;KDE;System;X-KDE-More
+
+-lxterminal.desktop
+LXTerminal
+Befehlszeile verwenden
+lxterminal
+
+8
+Terminal
+lxterminal
+0
+0
+lxterminal
+
+GTK;System;TerminalEmulator
+console,command line,execute
+-Thunar-folder-handler.desktop
+Ordner in Thunar öffnen
+Angegebene Ordner mit Thunar öffnen
+Thunar
+
+8
+Ordner öffnen
+thunar %F
+6
+0
+Thunar
+
+System;Utility;Core;GTK;FileTools;FileManager
+
+-pcmanfm.desktop
+PCManFM Dateimanager
+Das Dateisystem durchsuchen und Dateien verwalten
+system-file-manager
+
+8
+Dateimanager
+pcmanfm %U
+2
+0
+
+
+System;FileTools;FileManager;Utility;Core;GTK
+
+-redhat-usermount.desktop
+Plattenverwaltung
+Dateisysteme ein- und aushängen
+disks
+
+8
+
+usermount
+0
+0
+
+
+X-Red-Hat-Base;System
+
+-reportbug.desktop
+Reportbug
+Report bugs to the Debian BTS
+/usr/share/reportbug/debian-swirl.svg
+
+8
+Debian bug reporting tool
+reportbug --exit-prompt --ui gtk2
+0
+0
+reportbug
+
+System
+
+-gksu.desktop
+Root Terminal
+Öffnet ein Terminal als Benutzer 'root' unter Verwendung von gksu zur Passwortabfrage
+gksu-root-terminal
+
+8
+
+gksu /usr/bin/x-terminal-emulator
+2
+0
+
+
+GTK;System;TerminalEmulator
+
+-xfce4-sensors.desktop
+Sensorbetrachter
+Sensorwerte erkannter Sensoren überwachen.
+xfce-sensors
+
+8
+Betrachter für Sensorwerte
+xfce4-sensors
+2
+0
+
+
+X-XFCE;Utility;System;Monitor
+
+-lxtask.desktop
+Taskmanager
+Laufende Prozesse verwalten
+utilities-system-monitor
+
+8
+Prozessverwaltung
+lxtask
+2
+0
+
+
+GTK;System;Monitor
+task,kill,suspend,processor,memory,monitoring,performance
+-xfce4-taskmanager.desktop
+Taskmanager
+Taskmanager mit einfacher Bedienung
+utilities-system-monitor
+
+8
+Taskmanager
+xfce4-taskmanager
+2
+0
+
+
+System;Utility
+
+-lxde-x-terminal-emulator.desktop
+Terminal emulator
+Terminal Emulator
+terminal
+
+8
+Terminal Emulator
+/usr/bin/x-terminal-emulator
+6
+0
+
+
+System;TerminalEmulator;Utility
+
+-xfce4-terminal.desktop
+Xfce Terminal
+Terminal-Programm
+utilities-terminal
+
+8
+Terminal-Programm
+xfce4-terminal
+2
+0
+
+
+GTK;System;TerminalEmulator
+
+
++Multimedia
+Unterhaltungsmedien
+Multimedia-Menü
+applications-multimedia
+lxde-audio-video.directory
+2
+0
+-alsamixergui.desktop
+Alsamixergui
+Graphical audio mixer
+/usr/share/pixmaps/alsamixergui.xpm
+
+8
+
+/usr/bin/alsamixergui
+0
+0
+
+
+Application;AudioVideo
+
+-gnome-mplayer.desktop
+GNOME MPlayer
+Play your media
+gnome-mplayer
+
+8
+Media Player
+gnome-mplayer %U
+2
+0
+
+
+AudioVideo;Audio;Video;Player;TV
+
+-xfce4-mixer.desktop
+Lautstärkeregler
+Lautstärke einstellen
+multimedia-volume-control
+
+8
+
+xfce4-mixer
+2
+0
+
+
+X-XFCE;Audio;Mixer;AudioVideo
+
+-lxmusic.desktop
+LXMusic simple music player
+Musikdateien einfach wiedergeben
+lxmusic
+
+8
+Medien-Abspieler
+lxmusic
+2
+0
+
+
+AudioVideo;Audio;Player;GTK
+
+-mpv.desktop
+mpv Media Player
+Filme und Musik abspielen
+mpv
+
+8
+Multimedia player
+/usr/bin/mpv --no-terminal --force-window -- %U
+4
+0
+/usr/bin/mpv
+
+AudioVideo;Audio;Video;Player;TV
+
+-vlc.desktop
+VLC Media Player
+Wiedergabe, Aufnahme und Verbreitung Ihrer Multimedia-Streams
+vlc
+
+8
+Medienwiedergabe
+/usr/bin/vlc --started-from-file %U
+0
+0
+/usr/bin/vlc
+
+AudioVideo;Player;Recorder
+Player,Capture,DVD,Audio,Video,Server,Broadcast
+-xfburn.desktop
+Xfburn
+Brennprogramm für CDs und DVDs
+media-cdrom
+
+8
+
+xfburn
+2
+0
+xfburn
+
+X-XFCE;GTK;DiscBurning;Archiving;AudioVideo;Utility
+
+
++Accessories
+Zubehör
+Desktop-Zubehör
+applications-accessories
+lxde-utility.directory
+2
+0
+-xfce4-appfinder.desktop
+Anwendungsfinder
+Im System installierte Anwendungen finden und starten
+gtk-find
+
+8
+
+xfce4-appfinder
+2
+0
+
+
+Utility;X-XFCE
+
+-gpicview.desktop
+Bildbetrachter
+Bilder einfach betrachten
+gpicview
+
+8
+Bildbetrachter
+gpicview %f
+2
+0
+
+
+Graphics;Utility;Core;GTK;Viewer;RasterGraphics;2DGraphics;Photography
+graphics,pictures,viever,photography
+-xfce4-screenshooter.desktop
+Bildschirmfoto
+Bildschirmfoto des ganzen Bildschirms, des aktuellen Fensters oder eines Bereichs erstellen
+applets-screenshooter
+
+8
+
+xfce4-screenshooter
+2
+0
+
+
+GTK;Utility
+
+-clipit.desktop
+ClipIt
+Zwischenablage-Verwaltung
+clipit-trayicon
+
+8
+
+clipit
+0
+0
+
+
+GTK;GNOME;Application;Utility
+
+-exo-file-manager.desktop
+Dateimanager
+Das Dateisystem durchsuchen, um einen eigenen Befehl zu wählen
+system-file-manager
+
+8
+
+exo-open --launch FileManager %u
+2
+8
+
+
+Utility;X-XFCE;X-Xfce-Toplevel
+
+-galculator.desktop
+Galculator
+Ausführen von einfachen und wissenschaftlichen Berechnungen
+galculator
+
+8
+
+galculator
+2
+0
+
+
+Utility
+
+-org.gnome.gedit.desktop
+gedit
+Textdateien bearbeiten
+accessories-text-editor
+
+8
+Texteditor
+gedit %U
+2
+0
+
+
+GNOME;GTK;Utility;TextEditor
+Text,Editor
+-gvim.desktop
+GVim
+Textdateien bearbeiten
+vim
+
+8
+Texteditor
+gvim -f %F
+2
+0
+gvim
+
+Utility;TextEditor
+
+-yelp.desktop
+Hilfe
+Hilfe zu GNOME erhalten
+help-browser
+
+8
+
+yelp %u
+2
+34
+
+
+GNOME;GTK;Core;Documentation;Utility
+Dokumentation,Information,Handbuch
+-ipython3.desktop
+ipython3
+Enhanced interactive Python shell
+ipython3
+
+8
+IPython3
+ipython3
+1
+0
+
+
+Development;Utility
+
+-keepassx.desktop
+KeePassX
+Passwortverwaltung
+keepassx
+
+8
+Passwortverwaltung
+keepassx %f
+0
+0
+
+
+Qt;Utility;Security
+
+-gnome-disks.desktop
+Laufwerke
+Verwalten von Laufwerken und Medien
+gnome-disks
+
+8
+
+gnome-disks
+2
+0
+
+
+GNOME;GTK;Utility;HardwareSettings
+Datenträger,Laufwerk,Festplatte,HDD,CD,CDROM,DVD,Partition,ISO,Abbild,Sicherung,Wiederherstellung,Leistungstest,RAID,LUKS,Verschlüsselung,S.M.A.R.T,SMART
+-leafpad.desktop
+Leafpad
+Einfacher Texteditor
+leafpad
+
+8
+
+leafpad %f
+0
+0
+
+
+GTK;Utility;TextEditor
+editor
+-mousepad.desktop
+Mousepad
+Einfacher Texteditor
+accessories-text-editor
+
+8
+Texteditor
+mousepad %F
+2
+0
+
+
+Application;Utility;TextEditor;GTK
+
+-xfce4-notes.desktop
+Notizen
+Prima geeignet für kurze Notizen
+xfce4-notes-plugin
+
+8
+
+xfce4-notes
+0
+10
+xfce4-notes
+
+GTK;Utility;TrayIcon
+
+-globaltime.desktop
+Orage Globaltime
+Show clocks from different countries
+orage_globaltime
+
+8
+Globaltime
+globaltime
+2
+0
+
+
+X-XFCE;Office;Clock;GTK;Utility
+
+-xfce4-run.desktop
+Programm ausführen …
+Ein Programm ausführen
+gtk-execute
+
+8
+
+xfce4-appfinder --collapsed
+2
+8
+
+
+Utility;X-XFCE;X-Xfce-Toplevel
+
+-exo-terminal-emulator.desktop
+Terminal
+Befehlszeile verwenden
+utilities-terminal
+
+8
+
+exo-open --launch TerminalEmulator
+2
+8
+
+
+Utility;X-XFCE;X-Xfce-Toplevel
+
+-xfce4-about.desktop
+Über Xfce
+Informationen über die Xfce-Desktopumgebung
+help-about
+
+8
+
+xfce4-about
+0
+8
+
+
+Utility;X-XFCE;X-Xfce-Toplevel
+
+-vim.desktop
+Vim
+Textdateien bearbeiten
+vim
+
+8
+Texteditor
+vim %F
+1
+0
+vim
+
+Utility;TextEditor
+
+-xarchiver.desktop
+Xarchiver
+Ein auf GTK+2 basierender Archivmanager
+xarchiver
+
+8
+Archivmanager
+xarchiver %f
+2
+0
+
+
+GTK;Archiving;Utility
+GTK,archiver,frontend,compression,zip,bz2,7z,gzip,deb,rpm,arj,lzma,rar,xz
+-xfburn.desktop
+Xfburn
+Brennprogramm für CDs und DVDs
+media-cdrom
+
+8
+
+xfburn
+2
+0
+xfburn
+
+X-XFCE;GTK;DiscBurning;Archiving;AudioVideo;Utility
+
+-xournal.desktop
+Xournal
+Take handwritten notes
+xournal
+
+8
+
+xournal %f
+2
+0
+
+
+GNOME;GTK;Utility;TextEditor
+
+-gucharmap.desktop
+Zeichentabelle
+Sonderzeichen in Dokumente einfügen
+accessories-character-map
+
+8
+
+gucharmap
+2
+0
+
+
+GNOME;GTK;Utility
+Schrift,Schriftart,Unicode
+-xfce4-clipman.desktop
+Zwischenablage
+Verwaltung der Zwischenablagen
+xfce4-clipman-plugin
+
+8
+
+xfce4-clipman
+0
+10
+xfce4-clipman
+
+GTK;Utility;TrayIcon
+
+
+-
++DesktopSettings
+Einstellungen
+Persönliche Einstellungen
+preferences-desktop
+lxde-settings.directory
+2
+0
+-xfce-display-settings.desktop
+Anzeige
+Stellen Sie Ihre Bildschirme und deren Anordnung ein
+video-display
+
+8
+
+xfce4-display-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings
+
+-xfce-workspaces-settings.desktop
+Arbeitsflächen
+Anordnung, Namen und Ränder einstellen
+xfce4-workspaces
+
+8
+
+xfwm4-workspace-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-xfce4-accessibility-settings.desktop
+Barrierefreiheit
+Erleichtern Sie sich die Verwendung von Tastatur und Maus
+preferences-desktop-accessibility
+
+8
+
+xfce4-accessibility-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings
+
+-xfce4-notifyd-config.desktop
+Benachrichtigungen
+Das Erscheinungsbild von Benachrichtigungen anpassen
+xfce4-notifyd
+
+8
+
+xfce4-notifyd-config
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-users.desktop
+Benutzer und Gruppen
+Benutzer und Gruppen hinzufügen oder entfernen
+config-users
+
+8
+
+users-admin
+2
+0
+
+
+GNOME;GTK;System;Settings
+
+-exo-preferred-applications.desktop
+Bevorzugte Anwendungen
+Bevorzugte Anwendungen (Webbrowser, E-Mail-Programm und Terminal)
+preferences-desktop-default-applications
+
+8
+
+exo-preferred-applications
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-lxrandr.desktop
+Bildschirmeinstellungen
+Die Bildschirmauflösung und externe Monitore konfigurieren
+video-display
+
+8
+
+lxrandr
+0
+-15
+
+
+GTK;Settings;HardwareSettings;X-LXDE-Settings
+
+-thunar-settings.desktop
+Dateimanager
+Dateimanager Thunar einrichten
+system-file-manager
+
+8
+
+thunar-settings
+2
+0
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-time.desktop
+Datum und Uhrzeit
+Systemzeit, Datum und Zeitzone ändern
+time-admin
+
+8
+
+time-admin
+2
+0
+
+
+GNOME;GTK;System;Settings
+
+-lxsession-default-apps.desktop
+Default applications for LXSession
+Change the default applications on LXDE
+xfwm4
+
+8
+
+lxsession-default-apps
+0
+-15
+
+
+GTK;Settings;DesktopSettings;X-LXDE-Settings
+
+-pcmanfm-desktop-pref.desktop
+Desktop Einstellungen
+Hintergrundbilder und Verhalten der Desktopverwaltung ändern
+user-desktop
+
+8
+
+pcmanfm --desktop-pref
+2
+-15
+
+
+Settings;GTK;DesktopSettings;X-LXDE-Settings
+
+-lxsession-edit.desktop
+Desktop Session Settings
+Automatisch gestartete Anwendungen verwalten
+xfwm4
+
+8
+
+lxsession-edit
+0
+-15
+
+
+GTK;Settings;DesktopSettings;X-LXDE-Settings
+
+-services.desktop
+Dienste
+Festlegen, welche Dienste beim Systemstart ausgeführt werden sollen
+network-server
+
+8
+
+services-admin
+2
+0
+
+
+GNOME;GTK;System;Settings
+
+-xfce-settings-manager.desktop
+Einstellungen
+Grafische Einstellungsverwaltung für Xfce 4
+preferences-desktop
+
+8
+
+xfce4-settings-manager
+0
+8
+
+
+X-XFCE;Settings;DesktopSettings
+
+-xfce4-settings-editor.desktop
+Einstellungseditor
+Grafischer Einstellungseditor für Xfconf
+preferences-system
+
+8
+
+xfce4-settings-editor
+0
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog
+
+-xfce4-power-manager-settings.desktop
+Energieverwaltung
+Einstellungen für die Xfce Energieverwaltung
+xfpm-ac-adapter
+
+8
+Energieverwaltung
+xfce4-power-manager-settings
+2
+-39
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings
+
+-xfce-ui-settings.desktop
+Erscheinungsbild
+Passen Sie das Aussehen der Arbeitsoberfläche an
+preferences-desktop-theme
+
+8
+
+xfce4-appearance-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-lxappearance.desktop
+Erscheinungsbild anpassen
+Das Erscheinungsbild Ihrer Arbeitsumgebung und Anwendungen anpassen
+preferences-desktop-theme
+
+8
+Erscheinungsbild anpassen
+lxappearance
+2
+-15
+
+
+GTK;Settings;DesktopSettings;X-LXDE-Settings
+windows,preferences,settings,theme,style,appearance
+-xfce-wmtweaks-settings.desktop
+Feineinstellungen des Fensterverhaltens
+Nehmen Sie Feineinstellungen am Fensterverhalten und den Fenstereffekten vor
+wmtweaks
+
+8
+
+xfwm4-tweaks-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-xfce-wm-settings.desktop
+Fensterverwaltung
+Passen Sie das Fensterverhalten und die Fenstertastenkürzel an
+xfwm4
+
+8
+
+xfwm4-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-shares.desktop
+Freigegebene Ordner
+Stellen Sie hier ein, welche Ordner für andere Rechner in Ihrem Netzwerk sichtbar sind
+folder-remote
+
+8
+
+shares-admin
+6
+0
+
+
+GNOME;GTK;System;Settings;X-GNOME-NetworkSettings
+
+-panel-preferences.desktop
+Leiste
+Leiste einrichten
+xfce4-panel
+
+8
+
+xfce4-panel --preferences
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-xfce-mouse-settings.desktop
+Maus und Touchpad
+Stellen Sie das Verhalten und Aussehen der Zeigegeräte ein
+preferences-desktop-peripherals
+
+8
+
+xfce4-mouse-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings
+
+-xfce4-mime-settings.desktop
+MIME-Typ-Editor
+Verknüpfe Anwendungen mit MIME-Typen
+application-x-executable
+
+8
+
+xfce4-mime-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings
+
+-network.desktop
+Netzwerk
+Netzwerkschnittstellen und -verbindungen konfigurieren
+preferences-system-network
+
+8
+
+network-admin
+2
+0
+
+
+GNOME;GTK;System;Settings;X-GNOME-NetworkSettings
+
+-obconf.desktop
+Openbox Konfiguration Manager
+Konfiguriert den Openbox Window Manager
+obconf
+
+8
+Configuration Manager
+obconf %f
+2
+0
+
+
+Settings;DesktopSettings;GTK
+
+-openjdk-8-policytool.desktop
+OpenJDK Java 8 Policy Tool
+OpenJDK Java 8 Policy Tool
+openjdk-8
+
+8
+
+/usr/bin/policytool
+0
+0
+
+
+Settings
+java,security,policytool
+-xfce-xfcalendar-settings.desktop
+Orage preferences
+Settings for the Xfce 4 Calendar Application (Orage)
+xfcalendar
+
+8
+Orage Calendar Preferences
+orage -p
+0
+8
+
+
+X-XFCE;Settings;DesktopSettings;X-XfceSettingsDialog
+
+-redhat-userpasswd.desktop
+Passwort
+Ihr Anmeldepasswort ändern
+password
+
+8
+
+userpasswd
+0
+0
+
+
+X-Red-Hat-Base;X-GNOME-PersonalSettings;Settings
+
+-xfce-backdrop-settings.desktop
+Schreibtisch
+Stellen Sie den Hintergrund des Schreibtischs sowie das Menü- und Symbolverhalten ein
+preferences-desktop-wallpaper
+
+8
+
+xfdesktop-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-xfce-session-settings.desktop
+Sitzung und Startverhalten
+Passen Sie das Startverhalten der Arbeitsumgebung und den Startbildschirm an Ihre Bedürfnisse an
+xfce4-session
+
+8
+
+xfce4-session-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings
+
+-xfce-keyboard-settings.desktop
+Tastatur
+Bearbeiten Sie die Tastatureinstellungen und Tastenkürzel für Anwendungen
+preferences-desktop-keyboard
+
+8
+
+xfce4-keyboard-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings
+
+-lxinput.desktop
+Tastatur und Maus
+Maus, Tastatur und andere Eingabegeräte konfigurieren
+input-keyboard
+
+8
+
+lxinput
+2
+-15
+
+
+GTK;Settings;HardwareSettings;X-LXDE-Settings
+
+-redhat-userinfo.desktop
+Über mich
+Persönliche Informationen ändern
+user_icon
+
+8
+
+userinfo
+0
+0
+
+
+Settings;X-GNOME-PersonalSettings
+
+-thunar-volman-settings.desktop
+Wechseldatenträger- und Medieneinstellungen
+Handhabung von Wechseldatenträgern und -medien konfigurieren
+drive-removable-media
+
+8
+
+thunar-volman-settings
+2
+0
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings
+
+-changepassword.desktop
+WikiMUC-Passwort ändern
+Änderne dein WikiMuc-Passwort
+config-users
+
+8
+
+changepassword
+1
+0
+
+
+Settings;AccountSettings
+
+
+

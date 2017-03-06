@@ -50,7 +50,7 @@ Plugin {
       id=pcmanfm.desktop
     }
     Button {
-      id=lxde-x-www-browser.desktop
+      id=menu://applications/Internet/firefox-esr.desktop
     }
   }
 }
