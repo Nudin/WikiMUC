@@ -1,0 +1,26 @@
+---
+- hosts: debian_clients
+
+  tasks:
+   - name: Disable Swap
+     command: swapoff /dev/mapper/vg--wikipedia-swap_1
+     ignore_errors: yes
+
+   - name: Resize Swap-partition
+     lvol: vg=vg-wikipedia lv=swap_1 size=10g force=yes
+     #command: lvresize -f -L 10G /dev/mapper/vg--wikipedia-swap_1
+
+   - name: Reformat swap-partition
+     command: mkswap /dev/mapper/vg--wikipedia-swap_1
+
+   - name: Enable Swap
+     command: swapon /dev/mapper/vg--wikipedia-swap_1
+
+
+   - name: Create Backup-Partition
+     lvol: vg=vg-wikipedia lv=backup size=100g
+     when: ansible_hostname == "tivoli"
+
+   - name: Create Filesystem for Backup-Partition
+     filesystem: fstype=ext4 dev=/dev/vg-wikipedia/backup
+     when: ansible_hostname == "tivoli"

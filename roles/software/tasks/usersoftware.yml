@@ -39,6 +39,7 @@
     - evince-gtk
     - okular
     - mupdf
+    - xournal
   tags:
     - pdf
 
@@ -56,6 +57,9 @@
     - hugin
     - rawtherapee
     - darktable
+    - kipi-plugins
+    - digikam
+    - blender
   tags: 
     - imagesoftware
 

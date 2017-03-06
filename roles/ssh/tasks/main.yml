@@ -1,0 +1,9 @@
+---
+- name: Key exchange
+  lineinfile:
+    dest="/etc/ssh/ssh_config"
+    regex="KexAlgorithms"
+    line="KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256"
+
+
+

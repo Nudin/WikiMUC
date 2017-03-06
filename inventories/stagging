@@ -1,7 +1,8 @@
 localhost	  ansible_connection=local
 
 [debian_clients]
-allach      ansible_user=root
+#allach      ansible_user=root static_host_ip=192.168.24.14
+solln       ansible_user=root static_host_ip=192.168.24.18
 
 [debcacher_proxy]
 gern        ansible_user=root

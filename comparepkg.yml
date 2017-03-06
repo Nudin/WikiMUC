@@ -1,0 +1,13 @@
+- hosts: debian_clients
+
+  tasks:
+    - name: Create packagelist
+      shell: dpkg-query -f '${binary:Package}\n' -W > /tmp/{{ansible_hostname}}-pkglist
+
+    - name: Copy packagelist
+      fetch:
+        src: /tmp/{{ansible_hostname}}-pkglist
+        dest: /home/pi/pkglist
+        flat: yes
+
+

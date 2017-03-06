@@ -9,17 +9,51 @@
     path=/opt/java
     state=directory
 
-- name: Install various Wikipedia specific java-apps (1/3)
-  synchronize:
-    src=wikijavaapps/desktop/
-    dest=/usr/share/applications/
+- name: Install Pattypan
+  get_url:
+    url: https://github.com/yarl/pattypan/releases/download/v0.5.0/pattypan.jar
+    dest: /opt/java/
 
-- name: Install various Wikipedia specific java-apps (2/3)
-  synchronize:
-    src=wikijavaapps/jar/
-    dest=/opt/java/
+- name: Install Commonist
+  get_url:
+    url: http://neonstau.de/commonist/commonist-1.7.0.jar
+    dest: /opt/java/
 
-- name: Install various Wikipedia specific java-apps (3/3)
+- name: Download Vicuña
+  get_url:
+    url: https://github.com/yarl/vicuna/releases/download/1.23/vicuna-1.23.zip
+    dest: /tmp/
+      
+- name: Unpack Vicuña
+  unarchive:
+    src: /tmp/vicuna-1.23.zip
+    dest: /tmp
+    remote_src: yes
+
+- name: Install Vicuña
+  copy:
+    src: /tmp/vicuna-1.23/vicuna.jar
+    dest: /opt/java/vicuna.jar
+    remote_src: yes
+
+- name: Download Imker
+  get_url:
+    url: https://github.com/MarcoFalke/wiki-java-tools/releases/download/v16.09.11-imker/Imker_v16.09.11.zip
+    dest: /tmp/
+      
+- name: Unpack & Install Imker
+  unarchive:
+    src: /tmp/Imker_v16.09.11.zip
+    dest: /opt/java/
+    remote_src: yes
+    exclude: run-imker-gui.exe
+
+- name: Install .dektop-files for Vicuña, Commonist, Imker and Pattypan
   synchronize:
-    src=wikijavaapps/pixmaps/
-    dest=/usr/share/pixmaps/
+    src: wikijavaapps/desktop/
+    dest: /usr/share/applications/
+
+- name: Install icons for Vicuña, Commonist, Imker and Pattypan
+  synchronize:
+    src: wikijavaapps/pixmaps/
+    dest: /usr/share/pixmaps/

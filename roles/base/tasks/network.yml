@@ -1,4 +1,9 @@
 ---
+     
+- name: Set static ip address
+  template:
+    src:  interfaces.j2
+    dest: /etc/network/interfaces
 
 - name: Activated static ARP-table file
   lineinfile:
