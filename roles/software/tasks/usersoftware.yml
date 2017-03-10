@@ -69,6 +69,8 @@
     - iceweasel
       #  - firefox
     - iceweasel-l10n-de
+    - chromium
+    - chromium-l10n
   ignore_errors: true
   tags:
     - browser
