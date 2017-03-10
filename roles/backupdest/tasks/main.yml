@@ -14,6 +14,7 @@
     password: '!'
     home: /var/lib/duplicity
     shell: /usr/bin/rssh
+    createhome: yes
 
 - name: Create shutdown user
   user:
@@ -22,10 +23,11 @@
     password: '!'
     home: /var/lib/shutdown
     shell: "/usr/bin/shutdown -h now" # Is this sane?
+    createhome: yes
 
 - name: Mount Partition
   mount:
-    src: "/dev/disk/by-label/Backup"
+    src: "/dev/vg-wikipedia/backup"
     path: "/mnt/backup"
     state: mounted
 
@@ -36,45 +38,21 @@
     owner: "duplicity"
     mode: 0700
 
-- name: create home-directory
-  file:
-    state: directory
-    dest: "/var/lib/duplicity"
-    owner: "duplicity"
-
-- name: create ssh-directory
-  file:
-    state: directory
-    dest: "/var/lib/duplicity/.ssh"
-    owner: "duplicity"
-    mode: 0700
-
 - name: copy ssh-pubkey
-  copy:
-    src: duplicity.pub
-    dest: "/var/lib/duplicity/.ssh/authorized_keys"
-    owner: "duplicity"
-    mode: 06000
-
-- name: create home-directory for shutdown-user
-  file:
-    state: directory
-    dest: "/var/lib/shutdown"
-    owner: "shutdown"
-
-- name: create ssh-directory for shutdown-user
-  file:
-    state: directory
-    dest: "/var/lib/shutdown/.ssh"
-    owner: "shutdown"
-    mode: 0700
+  authorized_key:
+    user: duplicity
+    state: present
+    exclusive: yes
+    key: "{{ lookup('file', 'duplicity.pub') }}"
+    key_options: 'no-port-forwarding,no-x11-forwarding,no-agent-forwarding'
 
 - name: copy ssh-pubkey for shutdown-user
-  copy:
-    src: duplicity-shutdown.pub
-    dest: "/var/lib/shutdown/.ssh/authorized_keys"
-    owner: "shutdown"
-    mode: 06000
+  authorized_key:
+    user: shutdown
+    state: present
+    exclusive: yes
+    key: "{{ lookup('file', 'duplicity.pub') }}"
+    key_options: 'command="sudo shutdown -h now",no-port-forwarding,no-x11-forwarding,no-agent-forwarding'
 
 - name: Configure sudo-shutdown
   lineinfile:
