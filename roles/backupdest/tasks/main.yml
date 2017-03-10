@@ -1,0 +1,84 @@
+---
+
+# Before running this playbook: Create Backup-Partition
+
+- name: Install rssh
+  apt:
+    name: rssh
+    state: present
+
+- name: Create duplicity user
+  user:
+    name: duplicity
+    state: present
+    password: '!'
+    home: /var/lib/duplicity
+    shell: /usr/bin/rssh
+
+- name: Create shutdown user
+  user:
+    name: shutdown
+    state: present
+    password: '!'
+    home: /var/lib/shutdown
+    shell: "/usr/bin/shutdown -h now" # Is this sane?
+
+- name: Mount Partition
+  mount:
+    src: "/dev/disk/by-label/Backup"
+    path: "/mnt/backup"
+    state: mounted
+
+- name: setup rights for backupfolder
+  file:
+    state: directory
+    dest: "/mnt/backup"
+    owner: "duplicity"
+    mode: 0700
+
+- name: create home-directory
+  file:
+    state: directory
+    dest: "/var/lib/duplicity"
+    owner: "duplicity"
+
+- name: create ssh-directory
+  file:
+    state: directory
+    dest: "/var/lib/duplicity/.ssh"
+    owner: "duplicity"
+    mode: 0700
+
+- name: copy ssh-pubkey
+  copy:
+    src: duplicity.pub
+    dest: "/var/lib/duplicity/.ssh/authorized_keys"
+    owner: "duplicity"
+    mode: 06000
+
+- name: create home-directory for shutdown-user
+  file:
+    state: directory
+    dest: "/var/lib/shutdown"
+    owner: "shutdown"
+
+- name: create ssh-directory for shutdown-user
+  file:
+    state: directory
+    dest: "/var/lib/shutdown/.ssh"
+    owner: "shutdown"
+    mode: 0700
+
+- name: copy ssh-pubkey for shutdown-user
+  copy:
+    src: duplicity-shutdown.pub
+    dest: "/var/lib/shutdown/.ssh/authorized_keys"
+    owner: "shutdown"
+    mode: 06000
+
+- name: Configure sudo-shutdown
+  lineinfile:
+    dest: /etc/sudoers
+    state: present
+    regexp: '^(duplicity|shutdown)'
+    line: 'shutdown ALL=(ALL) NOPASSWD: /usr/bin/shutdown -h now'

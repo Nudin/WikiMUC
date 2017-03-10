@@ -1,0 +1,1 @@
+command="sudo shutdown -h now",no-port-forwarding,no-x11-forwarding,no-agent-forwarding ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICUbNuT/C0BPMUEjpd9j5BC829Uy7JqnvUSTjKa+5Cqh duplicity-shutdown
