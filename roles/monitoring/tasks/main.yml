@@ -1,0 +1,30 @@
+---
+
+- name: Install Munin-node
+  apt:
+    name: munin-node
+    state: present
+    update-cache: yes
+
+- name: Configure Munin
+  lineinfile:
+    dest: /etc/munin/munin-node.conf
+    line: "allow ^192\\.168\\.24\\.2$"
+    regexp: "allow"
+
+- name: Start and enable Munin
+  service:
+    name: munin-node
+    state: restarted
+
+- name: Add node to local monit-hostlist
+  delegate_to: 127.0.0.1
+  become: yes
+  blockinfile:
+      dest: /etc/munin/munin.conf
+      insertbefore: "### ADD NEW NODES HERE ###"
+      marker: "# {mark} ANSIBLE MANAGED BLOCK FOR {{ ansible_hostname }}"
+      block: |
+        [{{ ansible_fqdn }}]
+          address {{ ansible_default_ipv4.address }}
+
