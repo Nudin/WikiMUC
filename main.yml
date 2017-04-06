@@ -1,4 +1,10 @@
 ---
+- name: Jimbo
+  hosts: jimbo
+
+  roles:
+    - { role: watchdog, tags: [ 'watchdog' ] }
+
 - name: WikiMUC
   hosts: debian_clients
 
@@ -9,4 +15,5 @@
     - { role: scanner, tags: [ 'scanner' ] }
     - { role: ipsec, tags: [ 'ipsec' ] }
     - { role: artwork, tags: [ 'artwork' ] }
+    - { role: monitoring, tags: [ 'monitoring', 'munin'] }
 #    - { role: backupdest, tags: [ 'backupdest' ] }

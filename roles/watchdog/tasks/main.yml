@@ -1,0 +1,27 @@
+---
+- name: load module
+  modprobe:
+    name: bcm2835_wdt
+    state: present
+
+- name: load module on boot
+  lineinfile:
+    dest: /etc/modules
+    line: bcm2835_wdt
+    
+- name: Install watchdog-deamon
+  apt:
+    name: watchdog
+    state: present
+    update_cache: yes
+
+- name: Configure Watchdog
+  copy:
+    src: etc/watchdog.conf
+    dest: /etc/watchdog.conf
+
+- name: enable & start watchdog
+  service:
+    name: watchdog
+    state: reloaded
+    enabled: yes
