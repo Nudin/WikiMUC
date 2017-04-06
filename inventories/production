@@ -1,4 +1,4 @@
-localhost	  ansible_connection=local
+jimbo	  ansible_user=root
 
 [debian_clients]
 laim        ansible_user=root static_host_ip=192.168.24.11

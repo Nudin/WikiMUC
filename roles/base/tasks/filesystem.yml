@@ -1,5 +1,13 @@
 ---
 
+- name: install exfat
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - exfat-fuse
+    - exfat-utils
+  
 - name: tmp on tmpfs
   mount:
     name=/tmp

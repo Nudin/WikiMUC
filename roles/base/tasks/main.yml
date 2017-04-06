@@ -24,7 +24,7 @@
   tags:
     - ssh
     - security
-- include: selinux.yml
-  tags:
-    - selinux
-    - security
+#- include: selinux.yml
+#  tags:
+#    - selinux
+#    - security
