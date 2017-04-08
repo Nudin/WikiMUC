@@ -6,6 +6,7 @@
 -A INPUT -s 192.168.24.0/24 -p tcp -m tcp --dport 22 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
 -A INPUT -i lo -j ACCEPT
 -A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT
+-A INPUT -p tcp --dport 4949 -s 192.168.24.2 -j ACCEPT
 -A INPUT -j REJECT --reject-with icmp-port-unreachable
 -A FORWARD -j REJECT --reject-with icmp-port-unreachable
 COMMIT

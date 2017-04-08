@@ -1,5 +1,10 @@
 ---
      
+- name: Install resolvconf
+  apt:
+     name: resolvconf
+     update_cache: yes
+
 - name: Set static ip address
   template:
     src:  interfaces.j2
@@ -20,25 +25,39 @@
   file: 
     path: /etc/iptables
     state: directory
+  tags:
+    - iptables
   
 - name: configure firewall for ipv4
   copy:
     src: etc/iptables/rules.v4_aptcache
     dest: /etc/iptables/rules.v4
   when: ansible_hostname == 'gern'
+  tags:
+    - iptables
   
 - name: configure firewall for ipv4
   copy:
     src: etc/iptables/rules.v4
     dest: /etc/iptables/rules.v4
   when: ansible_hostname != 'gern'
+  tags:
+    - iptables
   
 - name: configure firewall for ipv6
   copy:
     src: etc/iptables/rules.v6
     dest: /etc/iptables/rules.v6
+  tags:
+    - iptables
 
 - name: Activate firewall
   apt:
     name: iptables-persistent
-    update_cache: yes
+  tags:
+    - iptables
+
+- name: Update firewall
+  shell: iptables-restore < /etc/iptables/rules.v4
+  tags:
+    - iptables

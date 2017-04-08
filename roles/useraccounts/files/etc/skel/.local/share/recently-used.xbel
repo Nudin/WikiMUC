@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/gast/Downloads/test.pdf" added="2017-04-08T13:51:46Z" modified="2017-04-08T13:51:46Z" visited="2017-04-08T13:51:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Dokumentenbetrachter" exec="&apos;evince %u&apos;" modified="2017-04-08T13:51:46Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/gast/TextFile.txt" added="2017-04-08T13:53:23Z" modified="2017-04-08T13:53:23Z" visited="2017-04-08T13:53:23Z">
+    <desc>Zeichensatz: UTF-8</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2017-04-08T13:53:23Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/gast/Downloads/Liquid_Ping_Pong_in_Space_-_RED_4K.webm" added="2017-04-08T13:55:43Z" modified="2017-04-08T13:55:43Z" visited="2017-04-08T13:55:43.869203Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2017-04-08T13:55:43Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

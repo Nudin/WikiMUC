@@ -1,7 +1,13 @@
+[KSRandr]
+InfoOutput=4
+
 [KSharedDataCache]
 InfoOutput=4
 
 [kbuildsycoca4]
+InfoOutput=2
+
+[kdecore (KConfigSkeleton)]
 InfoOutput=2
 
 [kdecore (services)]
@@ -9,3 +15,6 @@ InfoOutput=2
 
 [konqueror]
 InfoOutput=4
+
+[okular]
+InfoOutput=2

@@ -11,6 +11,8 @@ application/x-extension-shtml=userapp-Firefox-UFE0LY.desktop
 application/xhtml+xml=userapp-Firefox-UFE0LY.desktop
 application/x-extension-xhtml=userapp-Firefox-UFE0LY.desktop
 application/x-extension-xht=userapp-Firefox-UFE0LY.desktop
+application/pdf=evince.desktop
+image/jpeg=gpicview.desktop
 
 [Added Associations]
 inode/directory=pcmanfm.desktop;
@@ -25,3 +27,5 @@ application/x-extension-shtml=userapp-Firefox-UFE0LY.desktop;
 application/xhtml+xml=userapp-Firefox-UFE0LY.desktop;
 application/x-extension-xhtml=userapp-Firefox-UFE0LY.desktop;
 application/x-extension-xht=userapp-Firefox-UFE0LY.desktop;
+application/pdf=evince.desktop;
+image/jpeg=gpicview.desktop;
