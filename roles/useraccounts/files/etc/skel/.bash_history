@@ -1,2 +1,2 @@
-ip a
-ping google.com
+history -w
+history -w

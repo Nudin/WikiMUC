@@ -15,10 +15,14 @@ fi
 
 scp -r root@${hostname}:/home/gast/* roles/useraccounts/files/etc/skel
 scp -r root@${hostname}:/home/gast/.* roles/useraccounts/files/etc/skel
+# Todo: don't copy at first…
 git rm -rf roles/useraccounts/files/etc/skel/.cache/
 git rm -rf roles/useraccounts/files/etc/skel/.Xauthority
 git rm -rf roles/useraccounts/files/etc/skel/.xsession-errors
 git rm -rf roles/useraccounts/files/etc/skel/.dbus/session-bus/*
+git rm -rf roles/useraccounts/files/etc/skel/.kde/cache*
+git rm -rf roles/useraccounts/files/etc/skel/.thumbnails
+git rm -rf roles/useraccounts/files/etc/skel/.local/share/Trash
 
 git add -A
 git commit -a -m "Updated Skel"
