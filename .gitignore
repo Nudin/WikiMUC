@@ -1,3 +1,4 @@
 roles/useraccounts/files/etc/skel/.mozilla
 .*.swp
 *~
+*.retry
