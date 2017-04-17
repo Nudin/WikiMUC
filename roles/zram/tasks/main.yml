@@ -1,0 +1,26 @@
+---
+- name: install zram-init-scripts
+  copy:
+          src: "usr/bin/{{ item }}"
+          dest: "/usr/bin/{{ item }}"
+          mode: 755
+          owner: root
+          group: root
+  with_items:
+          - init-zram-swapping
+          - end-zram-swapping
+
+- name: install systemd-unit-file
+  copy:
+          src: "etc/systemd/system/zram.service"
+          dest: "/etc/systemd/system/zram.service"
+          mode: 644
+          owner: root
+          group: root
+
+- name: Start & enable zram-service
+  service:
+          name: zram
+          state: started
+          enabled: yes
+  
