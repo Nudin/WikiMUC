@@ -5,6 +5,7 @@
   roles:
     - { role: watchdog, tags: [ 'watchdog' ] }
     - { role: zram, tags: [ 'zram' ] }
+    - { role: smarthost, tags: [ 'smarthost' ] }
 
 - name: WikiMUC
   hosts: debian_clients

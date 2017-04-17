@@ -1,0 +1,36 @@
+---
+- include_vars: smtpcredentials.yml
+
+- name: install Exim4
+  apt:
+          name: "{{ item }}"
+          state: present
+  with_items:
+          - exim4-daemon-light
+          - mailutils
+
+- name: copy configuration
+  copy: 
+          src: etc/exim4/update-exim4.conf.conf
+          dest: /etc/exim4/update-exim4.conf.conf
+
+- name: add stmp-config
+  lineinfile:
+          dest: /etc/exim4/passwd.client
+          line: '*.google.com:{{ smtp_user }}:{{ smtp_pass }}'
+
+- name: Make sure file permissions are correct
+  file:
+          dest: /etc/exim4/passwd.client
+          owner: root
+          group: Debian-exim
+          mode: 0640
+
+- name: Update configuration
+  command: update-exim4.conf
+  
+- name: Start & enable Exim4
+  service:
+          name: exim4
+          state: started
+          enabled: yes
