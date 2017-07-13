@@ -26,6 +26,8 @@
     - python3-pip
     - ipython3
     - gnuplot
+    - curl
+    - iotop
 
 - include: desktop.yml
   tags: [desktop]
