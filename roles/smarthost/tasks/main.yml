@@ -34,3 +34,9 @@
           name: exim4
           state: started
           enabled: yes
+
+- name: Add Mail-forwarder
+  lineinfile:
+          dest: /etc/aliases
+          regexp: '^root: .*'
+          line: 'root: michael@schoenitzer.de'
