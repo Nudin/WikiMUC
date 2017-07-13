@@ -19,19 +19,34 @@
   lineinfile:
     dest: /etc/default/grub
     regexp: '#?GRUB_GFXMODE='
-    line: 'GRUB_GFXMODE=1024x768'
+    line: 'GRUB_GFXMODE=1280x1024'
   register: grubconf
+  when: ansible_hostname != 'fasanerie'
+  tags:
+          - grub
 
 - name: Enable splash
   replace:
     dest: /etc/default/grub
-    regexp: '#?GRUB_CMDLINE_LINUX_DEFAULT="(.*)"'
+    regexp: '#?GRUB_CMDLINE_LINUX_DEFAULT="(.+?)( quiet splash)*"'
     replace: 'GRUB_CMDLINE_LINUX_DEFAULT="\1 quiet splash"'
   register: grubconf
+  tags:
+          - grub
+
+- name: Fixup grub
+  replace:
+    dest: /etc/default/grub
+    regexp: '( quiet| splash)+'
+    replace: ' quiet splash"'
+  register: grubconf
+  tags:
+          - grub
 
 - name: Update grub config
   command: update-grub2
   when: grubconf.changed
+          - grub
 
 - name: Enable plymouth-theme
   command: plymouth-set-default-theme wikimuc
