@@ -38,3 +38,18 @@ iface eth1 inet static
 iface eth1 inet6 auto
 {% endif %}
 {% endif %}
+{% if ansible_eth2 is defined %}
+{% if ansible_eth2.active %}
+auto eth2
+allow-hotplug eth2
+iface eth2 inet static
+        address {{ static_host_ip }}
+        netmask 255.255.255.0
+        network 192.168.24.0
+        gateway 192.168.24.1
+        broadcast 192.168.24.255
+        dns-nameservers 192.168.24.2 192.168.24.1 8.8.8.8
+        dns-search net.wikimuc.org
+iface eth2 inet6 auto
+{% endif %}
+{% endif %}
