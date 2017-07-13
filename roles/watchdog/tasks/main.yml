@@ -19,9 +19,11 @@
   copy:
     src: etc/watchdog.conf
     dest: /etc/watchdog.conf
+  register: config
 
 - name: enable & start watchdog
   service:
     name: watchdog
-    state: reloaded
+    state: restarted
     enabled: yes
+  when: config.changed

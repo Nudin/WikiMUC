@@ -10,14 +10,22 @@
           - mailutils
 
 - name: copy configuration
+  template: 
+          src: update-exim4.conf.conf.j2
+          dest: /etc/exim4/update-exim4.conf.conf
+  when: ansible_hostname != 'jimbo'
+
+- name: copy configuration
   copy: 
           src: etc/exim4/update-exim4.conf.conf
           dest: /etc/exim4/update-exim4.conf.conf
+  when: ansible_hostname == 'jimbo'
 
 - name: add stmp-config
   lineinfile:
           dest: /etc/exim4/passwd.client
           line: '*.google.com:{{ smtp_user }}:{{ smtp_pass }}'
+  when: ansible_hostname == 'jimbo'
 
 - name: Make sure file permissions are correct
   file:
@@ -25,6 +33,7 @@
           owner: root
           group: Debian-exim
           mode: 0640
+  when: ansible_hostname == 'jimbo'
 
 - name: Update configuration
   command: update-exim4.conf
