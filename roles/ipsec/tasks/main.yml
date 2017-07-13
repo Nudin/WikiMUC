@@ -27,6 +27,7 @@
      dest: /home/pi/certs/
      flat: yes
   when: newreq.changed
+  ignore_errors: yes
 
 - name: Copy CA-Cert to hosts
   copy:
@@ -39,12 +40,14 @@
     src: /home/pi/certs/{{ansible_hostname}}cert.pem
     dest: /etc/racoon/certs/
   register: something
+  ignore_errors: yes
 
 - name: delete Req
   file:
     path: /etc/racoon/certs/{{ansible_hostname}}req.pem
     state: absent
   register: something
+  ignore_errors: yes
 
 - name: Setup SPD
   copy: 
