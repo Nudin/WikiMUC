@@ -28,7 +28,7 @@
   register: hosts
 
 - name: Restart Network
-  shell: ifdown eth0; ifup eth0 
+  shell: /etc/init.d/networking restart
   when: dhcpconf.changed or hosts.changed
 
 - name: Configure Keberos
@@ -46,11 +46,6 @@
   copy:
     src: etc/samba/smb.conf
     dest: /etc/samba/smb.conf
-
-- name: Restart Winbind
-  service:
-    name: winbind
-    state: restarted
 
 - name: Configure PAM-Mount to mount home-share
   copy:
@@ -81,6 +76,11 @@
 
 - name: Add computer to ads
   shell: net ads join -U Administrator%{{ domainpw }}
+
+- name: Restart Winbind
+  service:
+    name: winbind
+    state: restarted
 
 - name: Install passwordchange-script
   copy:
