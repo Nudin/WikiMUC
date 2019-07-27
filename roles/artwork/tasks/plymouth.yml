@@ -37,7 +37,7 @@
 - name: Fixup grub
   replace:
     dest: /etc/default/grub
-    regexp: '( quiet| splash)+'
+    regexp: '( quiet| splash)+"+'
     replace: ' quiet splash"'
   register: grubconf
   tags:
@@ -46,6 +46,7 @@
 - name: Update grub config
   command: update-grub2
   when: grubconf.changed
+  tags:
           - grub
 
 - name: Enable plymouth-theme
