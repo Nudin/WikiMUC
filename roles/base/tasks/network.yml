@@ -12,11 +12,6 @@
   tags:
           - ipaddress
 
-- name: Activated static ARP-table file
-  lineinfile:
-    dest: /etc/rc.local
-    line: arp -f /etc/ethers
-
 - name: Add Jimbo to static ARP-table
   lineinfile:
     dest: /etc/ethers
