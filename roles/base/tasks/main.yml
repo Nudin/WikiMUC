@@ -3,7 +3,11 @@
   tags:
     - apt
     - repos
-#- include: apt-cacher-client.yml
+- include: apt-cacher-client.yml
+  tags: 
+    - apt
+    - repos
+    - aptcacher
 - include: filesystem.yml
   tags:
     - filesystem

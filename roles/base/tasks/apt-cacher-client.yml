@@ -1,6 +1,21 @@
 ---
+- name: Install Netcat
+  apt:
+    name: netcat-traditional
+    state: installed
+
+- name: Install proxy detection script
+  copy:
+    src: "usr/local/bin/apt-proxy-detect.sh"
+    dest: "/usr/local/bin/apt-proxy-detect.sh"
+    mode: '0755'
+
 - name: Configure Apt-cacher-ng Proxy
-  lineinfile:
-    dest="/etc/apt/apt.conf.d/00proxy"
-    line='Acquire::http { Proxy "http://gern:3142" }'
-    create=yes
+  copy:
+    src: "etc/apt/apt.conf.d/01proxy"
+    dest: "/etc/apt/apt.conf.d/01proxy"
+
+- name: Configure Apt-cacher-ng Proxy
+  file:
+    dest: "/etc/apt/apt.conf.d/00proxy"
+    state: absent
