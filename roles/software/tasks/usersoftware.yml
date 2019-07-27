@@ -3,7 +3,8 @@
   apt: name={{ item }} state=present
   with_items:
     - libreoffice
-    - libreoffice-gtk
+    - libreoffice-gtk2
+    - libreoffice-gtk3
     - libreoffice-l10n-de
     - libreoffice-help-de
     - calibre
@@ -36,7 +37,7 @@
   apt: name={{ item }} state=present
   with_items:
     - cups-pdf
-    - evince-gtk
+    - evince
     - okular
     - mupdf
     - xournal

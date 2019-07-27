@@ -10,7 +10,7 @@
     - firmware-linux-nonfree
     - ttf-mscorefonts-installer
     - fonts-noto
-    - ttf-liberation
+    - fonts-liberation
     - ttf-dejavu
     - fonts-hanazono
     - hplip ## Uninstall this after printserver is set up

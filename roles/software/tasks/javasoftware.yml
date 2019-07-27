@@ -1,6 +1,6 @@
 ---
 - name: Install Java
-  apt: name={{ item }} state=present default_release=jessie-backports
+  apt: name={{ item }} state=present default_release=buster-backports
   with_items:
     - openjdk-8-jre
 

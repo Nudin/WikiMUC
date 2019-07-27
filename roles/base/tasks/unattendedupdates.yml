@@ -6,7 +6,7 @@
     - unattended-upgrades
     - apt-listchanges
     - apticron
-    - heirloom-mailx
+    - s-nail
     - exim4
 
 - name: Configure unattended-upgrades
