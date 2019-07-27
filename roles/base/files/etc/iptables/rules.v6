@@ -8,6 +8,7 @@
 :OUTPUT ACCEPT [0:0]
 -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
 -A INPUT -s fe80::/64 -p tcp -m tcp --dport 22 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
+-A INPUT -s fd00::/64 -p tcp -m tcp --dport 22 --tcp-flags FIN,SYN,RST,ACK SYN -j ACCEPT
 -A INPUT -i lo -j ACCEPT
 ## Allow ICMPv6 traffic regardless of state for all directly attached subnets
 #-A INPUT -s fe80::/64 -p icmpv6 -j ACCEPT
