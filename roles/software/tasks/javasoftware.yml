@@ -16,7 +16,7 @@
 
 - name: Install Commonist
   get_url:
-    url: http://neonstau.de/commonist/commonist-1.7.0.jar
+    url: https://djini.de/commonist/commonist-1.10.0.zip
     dest: /opt/java/
 
 - name: Download Vicuña

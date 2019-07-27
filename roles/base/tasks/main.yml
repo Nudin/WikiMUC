@@ -8,12 +8,18 @@
   tags:
     - filesystem
 #- include: pam_namespace.yml
+#  tags:
+#    - pam
+#    - security
 - include: unattendedupdates.yml
   tags:
     - unattendedupdates
 - include: grub.yml
   tags:
     - grub
+- include: tz.yml
+  tags:
+    - time
 - include: network.yml
   tags:
     - network
