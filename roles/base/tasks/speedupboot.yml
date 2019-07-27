@@ -2,3 +2,16 @@
 
 - name: Disable ModemManager
   service: name=ModemManager.service enabled=no
+  ignore_errors: True
+
+- name: Disable Wicd
+  service: name=wicd.service enabled=no
+  ignore_errors: True
+
+- name: Disable WPASupplicant
+  service: name=wpa_supplicant.service enabled=no
+  ignore_errors: True
+
+- name: Disable LinuxLogo
+  service: name=linuxlogo.service enabled=no
+  ignore_errors: True
