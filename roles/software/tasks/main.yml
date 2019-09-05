@@ -10,8 +10,11 @@
         dest=/etc/anacrontab
 
 - name: Install software for administrative use
-  apt: name={{ item }} state=present
-  with_items:
+  apt:
+          name: "{{ packages }}"
+          state: present
+  vars:
+    packages:
     - mosh
     - screen
     - htop
@@ -28,6 +31,14 @@
     - gnuplot
     - curl
     - iotop
+    - tree
+    - neovim
+    - python-neovim
+    - python3-neovim
+    - tmux
+
+- name: Install additional drivers
+  apt: name=firmware-realtek state=present
 
 - include: desktop.yml
   tags: [desktop]
