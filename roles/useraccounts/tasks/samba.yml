@@ -46,6 +46,8 @@
   copy:
     src: etc/samba/smb.conf
     dest: /etc/samba/smb.conf
+  tags:
+    - sambaconf
 
 - name: Configure PAM-Mount to mount home-share
   copy:

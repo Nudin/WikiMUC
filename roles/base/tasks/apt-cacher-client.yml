@@ -9,6 +9,8 @@
     src: "usr/local/bin/apt-proxy-detect.sh"
     dest: "/usr/local/bin/apt-proxy-detect.sh"
     mode: '0755'
+  tags:
+    - fixup
 
 - name: Configure Apt-cacher-ng Proxy
   copy:
