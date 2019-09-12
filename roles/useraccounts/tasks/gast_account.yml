@@ -8,10 +8,10 @@
 - name: Create guest-account {{ guest_usr }}
   user:
     name={{ guest_usr }}
-    password={{ guest_pw }} uid={{ guest_uid }} groups="guest" shell="/bin/bash"
+    password={{ guest_pw }} uid={{ guest_uid }} shell="/bin/bash"
 
 - name: Add guest-account to groups
-  user: name={{ guest_usr }} groups=cdrom,floppy,audio,video,plugdev,users
+  user: name={{ guest_usr }} groups=cdrom,floppy,audio,video,plugdev,users,guest
 
 - name: Prevent guest-user from changing the password
   command: passwd {{ guest_usr }} -n 10000
