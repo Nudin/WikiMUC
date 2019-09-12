@@ -1,0 +1,25 @@
+---
+
+- name: Install additional Firmware
+  apt:
+          name: "{{ packages }}"
+          state: present
+  vars:
+          packages:
+          - firmware-realtek
+
+- name: Install PPD for printer
+  copy:
+          src: etc/cups/ppd/
+          dest: /etc/cups/ppd
+          owner: root
+          group: root
+          mode: 0640
+
+- name: Configure printer
+  copy:
+          src: etc/cups/printers.conf
+          dest: /etc/cups/printers.conf
+          owner: root
+          group: root
+          mode: 0600

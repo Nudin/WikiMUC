@@ -1,0 +1,12 @@
+---
+- name: Set default volume
+  lineinfile:
+          path: /etc/pulse/default.pa
+          regexp: '^set-sink-volume 0'
+          line: set-sink-volume 0 49152
+
+- name: Unmute by default
+  lineinfile:
+          path: /etc/pulse/default.pa
+          regexp: '^set-sink-mute 0'
+          line: set-sink-mute 0 0

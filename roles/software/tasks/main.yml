@@ -36,9 +36,10 @@
     - python-neovim
     - python3-neovim
     - tmux
+  tags: [admin]
 
-- name: Install additional drivers
-  apt: name=firmware-realtek state=present
+- include: drivers.yml
+  tags: [drivers]
 
 - include: desktop.yml
   tags: [desktop]

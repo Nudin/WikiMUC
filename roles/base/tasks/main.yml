@@ -30,6 +30,9 @@
 - include: speedupboot.yml
   tags:
     - speedupboot
+- include: sound.yml
+  tags:
+    - sound
 - include: fail2ban.yml
   tags:
     - ssh
