@@ -7,16 +7,19 @@ Global {
   margin=0
   widthtype=percent
   width=100
-  height=26
-  transparent=0
+  height=28
+  transparent=1
   tintcolor=#000000
-  alpha=0
+  alpha=173
   setdocktype=1
   setpartialstrut=1
   usefontcolor=1
   fontcolor=#ffffff
-  background=1
+  background=0
   backgroundfile=/usr/share/lxpanel/images/background.png
+  usefontsize=1
+  fontsize=12
+  iconsize=28
 }
 Plugin {
   type=space
@@ -97,13 +100,20 @@ Plugin {
     UseMouseWheel=1
     UseUrgencyHint=1
     FlatButton=0
-    MaxTaskWidth=150
+    MaxTaskWidth=170
     spacing=1
+    DisableUpscale=0
   }
 }
 Plugin {
-  type=cpu
+  type=xkb
   Config {
+    Model=pc105
+    LayoutsList=de,us
+    VariantsList=,euro
+    ToggleOpt=grp:shift_caps_toggle
+    KeepSysLayouts=0
+    FlagSize=3
   }
 }
 Plugin {

@@ -1,0 +1,57 @@
+# Diese viminfo-Datei wurde von Vim 8.1 generiert.
+# Sie können sie verändern, wenn Sie vorsichtig vorgehen!
+
+# Viminfo version
+|1,4
+
+# Wert von 'encoding', als diese Datei geschrieben wurde
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# Befehlszeile Geschichte (neueste bis älteste):
+:wq
+|2,0,1568226294,,"wq"
+:q
+|2,0,1568226293,,"q"
+:Wq
+|2,0,1568226244,,"Wq"
+
+# Suchausdruck Geschichte (neueste bis älteste):
+
+# Ausdruck Geschichte (neueste bis älteste):
+
+# Eingabe-Zeile Geschichte (neueste bis älteste):
+
+# Debug-Zeile Geschichte (neueste bis älteste):
+
+# Register:
+""-	CHAR	0
+	false
+|3,1,36,0,1,0,1568226288,"false"
+
+# Datei-Markierungen:
+'0  105  13  ~/Schreibtisch/firefox-esr.desktop
+|4,48,105,13,1568226294,"~/Schreibtisch/firefox-esr.desktop"
+'1  105  18  ~/Schreibtisch/firefox-esr.desktop
+|4,49,105,18,1568226246,"~/Schreibtisch/firefox-esr.desktop"
+
+# Jumplist (neueste zuerst):
+-'  105  13  ~/Schreibtisch/firefox-esr.desktop
+|4,39,105,13,1568226294,"~/Schreibtisch/firefox-esr.desktop"
+-'  105  18  ~/Schreibtisch/firefox-esr.desktop
+|4,39,105,18,1568226246,"~/Schreibtisch/firefox-esr.desktop"
+-'  1  0  ~/Schreibtisch/firefox-esr.desktop
+|4,39,1,0,1568226237,"~/Schreibtisch/firefox-esr.desktop"
+-'  1  0  ~/Schreibtisch/firefox-esr.desktop
+|4,39,1,0,1568226237,"~/Schreibtisch/firefox-esr.desktop"
+
+# Geschichte der Markierungen innerhalb von Dateien (neueste zuerst):
+
+> ~/Schreibtisch/firefox-esr.desktop
+	*	1568226293	0
+	"	105	13
+	^	105	18
+	.	105	17
+	+	105	17

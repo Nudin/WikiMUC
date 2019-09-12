@@ -1,6 +1,32 @@
-Xsession: X session started for gast at Sa 8. Apr 15:48:53 CEST 2017
+Xsession: X session started for gast at Mi 11. Sep 18:26:06 CEST 2019
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/2000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/gast/.Xauthority
 localuser:gast being added to access control list
-** Message: main.vala:99: Session is LXDE
-** Message: main.vala:100: DE is LXDE
-** Message: main.vala:131: log directory: /home/gast/.cache/lxsession/LXDE
-** Message: main.vala:132: log path: /home/gast/.cache/lxsession/LXDE/run.log
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting USER=gast
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting HOME=/home/gast
+dbus-update-activation-environment: setting DESKTOP_SESSION=LXDE
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/2000/bus
+dbus-update-activation-environment: setting LOGNAME=gast
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting GDM_LANG=de_DE.utf8
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session1
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/2000
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting LANG=de_DE.UTF-8
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=LXDE
+dbus-update-activation-environment: setting XAUTHORITY=/home/gast/.Xauthority
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/gast
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting GDMSESSION=LXDE
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/2000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/home/gast
+** Message: 18:26:06.502: main.vala:101: Session is LXDE
+** Message: 18:26:06.502: main.vala:102: DE is LXDE
+** Message: 18:26:06.529: main.vala:133: log directory: /home/gast/.cache/lxsession/LXDE
+** Message: 18:26:06.529: main.vala:134: log path: /home/gast/.cache/lxsession/LXDE/run.log

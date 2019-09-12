@@ -1,2 +1,0 @@
-history -w
-history -w
