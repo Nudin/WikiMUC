@@ -12,6 +12,7 @@
     block: |
       set superusers="root"
       password_pbkdf2 root grub.pbkdf2.sha512.10000.B14E923CE8B3E1972B270E8B7518B9BF9C156DA782469553CB48C86AA062CAA1CBECD17CCC810EC3FFB3CDBE0D2ED8D8D802D82C4F7E08CA23CBF9B96F2911E3.95F2F4EF95CD4E1856190EB7BDD6B78F4B8641650BCE1A400498C72B286BFE2B9E280513FCFC8DC57CB228613621E13CF4F0CB5C49B5904BAFB7B7A664BFDFCB
+  when: ansible_hostname != 'fasanerie'
 
 - name: Set unrestricted as default behavior for linux
   replace:
@@ -21,9 +22,9 @@
 
 - name: Set unrestricted as default behavior for windows
   replace:
-    dest: /etc/grub.d/10_linux
-    regexp: '(grub_quote..) (--class windows --class os)'
-    replace: '\1 --unrestricted \2'
+    dest: /etc/grub.d/30_os-prober
+    regexp: '--class os '
+    replace: '--unrestricted --class os '
   when: ansible_hostname == 'fasanerie'
 
 - name: Set timeout
