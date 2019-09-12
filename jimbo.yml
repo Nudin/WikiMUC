@@ -1,0 +1,8 @@
+---
+- name: Jimbo
+  hosts: jimbo
+
+  roles:
+    - { role: watchdog, tags: [ 'watchdog' ] }
+    - { role: zram, tags: [ 'zram' ] }
+    - { role: smarthost, tags: [ 'smarthost' ] }
